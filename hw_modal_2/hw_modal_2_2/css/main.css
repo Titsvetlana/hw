@@ -1,0 +1,57 @@
+*{
+	font-family: Arial, sans-serif;
+}
+div{
+	background-color: rgba(220, 220, 220, 0.8);
+	width: 600px;
+	margin: 20px;
+}
+h1{
+	padding-left: 38px;
+	padding-top: 10px;
+}
+ul{
+	list-style-type: square ; 
+	width: 90%;
+	padding: 5%;
+	padding-top: 0px;
+}
+li{
+    padding-left: 25px;	
+	background-color: #1E90FF;
+	line-height: 2.5; /*ширина ячеек*/
+}
+.even{
+	background-color: #00BFFF;
+}
+span{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+li:hover {
+  background-color: #C0C0C0;
+  text-decoration: line-through;
+}
+i{
+	position: absolute;
+	top: 30%;
+}
+.fa-times{
+	color: red;
+}
+.fa-check-square-o{
+	opacity: 0; /* Полупрозрачность таблицы */
+    filter: alpha/*(Opacity=0)*/; 
+}
+.fa-check-square-o:hover{
+	opacity: 1;  
+    filter: alpha/*(Opacity=100)*/; 
+}
+.fa-square-o{
+    opacity: 1; 
+    filter: alpha/*(Opacity=100)*/;
+}
+.fa-square-o:hover{
+    opacity: 0; 
+    filter: alpha/*(Opacity=0)*/;
+}
