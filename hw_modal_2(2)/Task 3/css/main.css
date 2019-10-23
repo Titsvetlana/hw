@@ -1,0 +1,38 @@
+body{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+.basis{
+	background-color: #93b9d1;
+}
+div{
+	padding: 25px;
+	font-family: Arial, sans-serif;
+	color: #fff;
+}
+a{
+	text-decoration: none;
+    font-size: .9em;
+    line-height: normal;
+    color: #866973;
+}
+h2{
+	display: block;
+	background-color: #083743;
+	font-weight: normal;
+	text-indent: 1.5em;
+	margin: 0;
+	padding: 1.5%;
+}
+p{
+	background-color: rgba(21, 73, 88, 0.8);
+    margin: 0;
+    padding: 1.5%;
+    line-height: 1.5em;
+}
+#V1, #V2{
+    background-color: #93b9d1;
+    color: #5f6267;
+    margin-bottom: 20px;
+}

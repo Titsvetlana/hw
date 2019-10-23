@@ -1,0 +1,20 @@
+div{
+	width: 400px;
+	background-color: rgba(220, 220, 220, 0.5);
+	font-family: Arial, sans-serif;
+	font-size: 120%;
+	margin: 10%;
+	padding-top: 1%;
+	padding-left: 5%;
+	padding-right: 150px;
+	padding-bottom: 5%;
+}
+span{
+	color: #00008B;
+}
+ol{
+        font-weight: bold;
+}
+li span{
+        font-weight: normal;
+}
