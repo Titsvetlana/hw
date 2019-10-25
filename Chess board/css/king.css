@@ -1,0 +1,42 @@
+.king{
+	width: 0px;
+	height: 0px;
+	border: 40px solid;
+	border-color: transparent black  black black;
+	position: relative;
+	top: 8px;
+	left: 9px;
+}
+.king::before{
+	content: ' ';
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: 27px solid;
+	border-color: black transparent transparent transparent ;
+	position: relative;
+	bottom: 54px;
+	right: 27px;
+	transform: rotate(180deg);
+}
+.king1{
+	width: 0px;
+	height: 0px;
+	border: 40px solid;
+	border-color: transparent grey grey grey;
+	position: relative;
+	top: 8px;
+	left: 9px;
+}
+.king1::before{
+	content: ' ';
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: 27px solid;
+	border-color: grey transparent transparent transparent ;
+	position: relative;
+	bottom: 54px;
+	right: 27px;
+	transform: rotate(180deg);
+}

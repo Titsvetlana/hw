@@ -1,0 +1,42 @@
+.warior{
+	width: 20px;
+	height: 0px;
+	border: 30px solid;
+	border-color: transparent transparent black transparent;
+	position: relative;
+	top: 25px;
+	left: 15px;
+}
+.warior::before{
+	content: ' ';
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: 15px solid;
+	border-color:  black;
+	border-radius: 50%;
+	position: relative;
+	bottom: 29px;
+	right: 5px;
+}
+.warior1{
+	width: 20px;
+	height: 0px;
+	border: 30px solid;
+	border-color: transparent transparent grey transparent;
+	position: relative;
+	top: 25px;
+	left: 15px;
+}
+.warior1::before{
+	content: ' ';
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: 15px solid;
+	border-color:  grey;
+	border-radius: 50%;
+	position: relative;
+	bottom: 29px;
+	right: 5px;
+}
