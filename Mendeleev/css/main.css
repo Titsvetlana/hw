@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+td{
+	border: 1px solid black;
+	text-align: center;
+	text-transform: uppercase;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.b{
+	font-weight: bold;
+}
+.vertical{
+	transform: rotate(-90deg);
+	font-size: 35%;
+}
+.letters{
+	word-spacing: 45px;
+}
+sup.left{
+    position: relative;
+    left: -20%;
+}
+sup{
+	position: relative;
+	left: 40%;
+}
+.oksid{
+	height: 70px;
+}
+.red{
+	background-color: red;
+}
+.yellow{
+	background-color: yellow;
+}
+.blue{
+	background-color: blue;
+}
+.green{
+    background-color: green;
+}
