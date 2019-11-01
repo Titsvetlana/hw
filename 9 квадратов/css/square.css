@@ -1,0 +1,88 @@
+square.css
+div.pos3{
+	position: absolute;
+}
+.square{
+	position: relative;
+	width: 350px;
+	top: 500px;
+	left: 660px;
+}
+.square>div{
+	width: 50px;
+	height: 50px;
+	background-color: #1a8fc9;
+	display: inline-block;
+	position: relative;
+	margin-left: 5px;
+}
+@keyframes squ1{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: 117px;
+    }
+}
+.s1{
+	animation: squ1 2s infinite;
+}
+@keyframes squ2{
+	0%{
+		left: 0;  
+	}
+	100%{
+		left: 58px;
+	}
+}
+.s2{
+	animation: squ2 2s infinite;
+}
+@keyframes squ4{
+	0%{
+		left: 0px;  
+	}
+	100%{
+		left: -58px;
+	}
+}
+.s4{
+	animation: squ4 2s infinite;
+}
+@keyframes squ5{
+	0%{
+		left: 0;  
+	}
+	100%{
+		left: -117px;
+	}
+}
+.s5{
+	animation: squ5 2s infinite;
+}
+@keyframes squ3{
+	0%{
+		width: 50px;
+		height: 50px;
+
+	}
+	85%{
+		width: 50px;
+		height: 50px;
+
+
+	}
+	90%{
+		width: 80px;
+		height: 80px;
+
+	}
+	100%{
+		width: 100px;
+		height: 100px;
+
+	}
+}
+.s3{
+	animation: squ3 2s infinite;
+}

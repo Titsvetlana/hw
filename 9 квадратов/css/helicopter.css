@@ -1,0 +1,142 @@
+helicopter.css
+div.pos2{
+	position: absolute;
+}
+.helicopter{
+	position: relative;
+	width: 110px;
+	top: 600px;
+	left: 260px;
+	transform: rotate(45deg);
+
+}
+.helicopter>div{
+	width: 50px;
+	height: 50px;
+	background-color: #1a8fc9;
+	display: inline-block;
+	position: relative;
+	margin: -2px;
+
+}
+@keyframes hel1{
+	0%{
+		top: 0;
+		left: 0;
+		transform: rotate(0);
+	}
+	25%{
+		top: 0;
+		left: -80px;
+		transform: rotate(90deg);
+	}
+    50%{
+		top: 0;
+		left: 0;
+		transform: rotate(180deg);
+	}
+	75%{
+		top: 0;
+		left: -80px;
+		transform: rotate(270deg);
+	}
+	100%{
+		top: 0;
+		left: 0;
+		transform: rotate(360deg);
+	}
+}
+.z1{
+	animation: hel1 4s 1s infinite;
+}
+@keyframes hel2{
+	0%{
+		top: 0;
+		left: 0;
+		transform: rotate(0);
+	}
+	25%{
+		top: -80px;
+		left: 0;
+		transform: rotate(90deg);
+	}
+	50%{
+		top: 0;
+		left: 0;
+		transform: rotate(180deg);
+	}
+	75%{
+		top: -80px;
+		left: 0;
+		transform: rotate(270deg);
+
+	}
+	100%{
+		top: 0;
+		left: 0;
+		transform: rotate(360deg);
+	}
+}
+.z2{
+	animation: hel2 4s 1s infinite;
+}
+@keyframes hel3{
+	0%{
+		top: 0;
+		left: 0;
+		transform: rotate(0);
+	}
+	25%{
+		top: 80px;
+		left: 0;
+		transform: rotate(90deg);
+	}
+	50%{
+		top: 0;
+		left: 0;
+		transform: rotate(180deg);
+	}
+	75%{
+		top: 80px;
+		left: 0;
+		transform: rotate(270deg);
+	}
+	100%{
+		top: 0;
+		left: 0;
+		transform: rotate(360deg);
+	}
+}
+.z3{
+	animation: hel3 4s 1s infinite;
+}
+@keyframes hel4{
+	0%{
+		top: 0;
+		left: 0;
+		transform: rotate(0);
+	}
+	25%{
+		top: 0;
+		left: 80px;
+		transform: rotate(90deg);
+	}
+	50%{
+		top: 0;
+		left: 0;
+		transform: rotate(180deg);
+	}
+	75%{
+		top: 0;
+		left: 80px;
+		transform: rotate(270deg);
+	}
+	100%{
+		top: 0;
+		left: 0;
+		transform: rotate(360deg);
+	}
+}
+.z4{
+	animation: hel4 4s 1s infinite;
+}

@@ -1,0 +1,159 @@
+.pos{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+.cub{
+	position: relative;
+	width: 250px;
+}
+.cub>div{
+	width: 50px;
+	height: 50px;
+	background-color: tan;
+	margin: 15px;
+	display: inline-block;
+	position: relative;
+}
+div.c4{
+	background-color: #a84d20;
+}
+@keyframes pos{
+	0%{
+		top: 0;
+		left: 0;
+	}
+	25%{
+		top: 5px;
+		left: 0px;
+	}
+	50%{
+		top: 0;
+		left: 5px;
+	}
+	75%{
+		top: 0;
+		left: 0;
+      
+	}
+	100%{
+		top: 0;
+		left: 5px;
+	}
+}
+.cub{
+	top: 0;
+	left: 0;
+	animation: pos 1s infinite;
+}
+@keyframes cub2{
+    0%{
+    	top: -60px;
+    	height: 0;
+    }
+    100%{
+    	top: 0;
+    	height: 50px;
+    }
+}
+.c2{
+	animation: cub2 1s 0.6s infinite;
+}
+@keyframes cub3{
+	0%{
+		right: -60px;
+		width: 1px;
+	}
+	50%{
+		right: 0;
+		width: 50px;
+	}
+	100%{
+		right: 80px;
+		width: 50px;
+	}
+}
+.c3{
+	animation: cub3 1s 0.6s infinite;
+}
+@keyframes cub56{
+	0%{
+		top: 0;
+	}
+	50%{
+		top: -85px;
+	}
+	100%{
+		top: 0;
+	}
+}
+.c5, .c6{
+	animation: cub56 2s infinite;
+}
+@keyframes cub8{
+	0%{
+		height: 0;
+		bottom: -60px
+
+	}
+	25%{
+		height: 0;
+		bottom: -60px;
+	}
+	50%{
+		height: 50px;
+		bottom: 0;
+	}
+	74%{
+		background-color: #b02a35;
+	}
+	75%{
+		height: 50px;
+		bottom: 0;
+		left: 0;
+		background-color: tan;
+	}
+	100%{
+		height: 50px;
+		bottom: 0;
+		left: -80px;
+		background-color: tan;
+	}
+}
+div.c8{
+	background-color: #b02a35;
+	animation: cub8 2s 0.5s infinite;
+}
+@keyframes cub9{
+	0%{
+		right: -60px;
+		width: 0;
+	}
+	25%{
+		right: 0;
+		width: 50px;
+		top: 0;
+	}
+	50%{
+		top: -80px;
+		width: 50px;
+	}
+	75%{
+		top: 0;
+		left: 0;
+		width: 50px;
+	}
+	85%{
+		top: 0;
+		left: -37px;
+		width: 0;
+	}
+	100%{
+		left: -35px;
+		width: 0;
+	}
+}
+div.c9{
+	background-color: #2050a8;
+	animation: cub9 2s infinite;
+}
