@@ -1,0 +1,78 @@
+body{
+	background-color: rgba(127, 160, 180, .4);
+	width: 100hw;
+	margin: 0;
+	padding: 0;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 350px;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+}
+.menu *{
+	margin: 0;
+	padding: 0;
+}
+.menu ul, .menu ol{
+	list-style: none;
+}
+.menu>ul{
+	display: flex;
+	justify-content: center;
+}
+.menu>ul li a{
+	display: block;
+	background-color: rgba(45, 138, 49, 1);
+	padding: 15px 30px 15px 40px;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid rgba(34, 99, 36, .9);
+	transition: all 0.4s ease;
+}
+li:hover{
+	background-color: rgba(1, 94, 4, 1);
+	box-shadow: 1px 5px 10px -5px #569c58; 
+	transition: all 0.4s ease;
+}
+
+.menu li ul{
+	position: absolute;
+	min-width: 195px;
+	display: none;
+}
+.menu li > ul li{
+	border: 1px solid rgba(34, 99, 36, .9)
+}
+.menu li > ul li a{
+	padding: 10px;
+	text-transform: none;
+	background-color: rgba(1, 94, 4, .7);
+	text-transform: capitalize;
+}
+.menu li > ul li ul.first{
+    position: absolute;
+	right: -195px;
+	top: 0px;
+}
+.menu li > ul li ul.second{
+    position: absolute;
+	right: -195px;
+	top: 40px;
+}
+.menu li > ul li ul.last{
+    position: absolute;
+	right: -195px;
+	top: 80px;
+}
+.menu li:hover > ul{
+	display: block;
+}
+div{
+	margin-top: 100px;
+	width: 670px;
+	position: relative;
+	left: 350px;
+}
