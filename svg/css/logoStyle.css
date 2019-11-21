@@ -1,0 +1,32 @@
+circle{
+	 cx: 50px; 
+	 cy: 50px; 
+	 r: 50px; 
+	 stroke-width: 1px; 	 
+}
+svg:nth-child(1){
+     position: absolute;
+     left: 50px;
+	 stroke: #6633CC; 
+	 fill: #333399;
+}
+svg:nth-child(2){
+	 position: absolute;
+	 left: 100px;
+	 stroke: #FF6666; 
+	 fill: #CC3333;
+	 z-index: 1;
+}
+svg:nth-child(3){
+	 position: absolute;
+	 stroke: #33CC66; 
+	 left: 150px;
+	 fill: #339933;
+	 z-index: 0;
+}
+svg text{
+	fill: #fff; 
+	font-size: 30px; 
+	font-family: Verdana;
+	z-index: 1;
+}
