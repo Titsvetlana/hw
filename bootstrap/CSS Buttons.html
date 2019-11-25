@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buttons Bootstrap</title>
+	<link rel="stylesheet" href="css/main.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="CSS Buttons.html">CSS Buttons</a>
+			</li>
+			<li>
+				<a href="CSS Forms.html">CSS Forms</a>
+			</li>
+			<li>
+				<a href="CSS Images.html">CSS Images</a>
+			</li>
+			<li>
+				<a href="CSS Tables.html">CSS Tables</a>
+			</li>
+			<li>
+				<a href="Grid System.html">Grid System</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="features">
+		<h3>CSS Buttons</h3>
+		<div class="container">
+			<div class="row">
+				<button type="button" class="btn btn-primary">Primary</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+				<button type="button" class="btn btn-success">Success</button>
+				<button type="button" class="btn btn-danger">Danger</button>
+				<button type="button" class="btn btn-warning">Warning</button>
+				<button type="button" class="btn btn-info">Info</button>
+				<button type="button" class="btn btn-light">Light</button>
+				<button type="button" class="btn btn-dark">Dark</button>
+				<button type="button" class="btn btn-link">Link</button>
+			</div>
+		</div>
+		<pre>
+	&#60;button type="button" class="btn btn-primary"&#62;Primary&#60;/button&#62;
+	&#60;button type="button" class="btn btn-secondary"&#62;Secondary&#60;/button&#62;
+	&#60;button type="button" class="btn btn-success"&#62;Success&#60;/button&#62;
+	&#60;button type="button" class="btn btn-danger"&#62;Danger&#60;/button&#62;
+	&#60;button type="button" class="btn btn-warning"&#62;Warning&#60;/button&#62;
+	&#60;button type="button" class="btn btn-info"&#62;Info&#60;/button&#62;
+	&#60;button type="button" class="btn btn-light"&#62;Light&#60;/button&#62;
+	&#60;button type="button" class="btn btn-dark"&#62;Dark&#60;/button&#62;
+	&#60;button type="button" class="btn btn-link"&#62;Link&#60;/button&#62;
+		</pre>
+		<p class="heading">
+			Передача смысла вспомогательным технологиям
+		</p>
+		<p>
+			Использование цвета для добавления значения обеспечивает только визуальную индикацию, которая не будет передаваться пользователям вспомогательных технологий, таких как программы чтения с экрана. Убедитесь, что информация, обозначенная цветом, либо очевидна из самого содержимого (например, видимого текста), либо включена альтернативными способами, такими как дополнительный текст, скрытый с <span>.sr-only</span> классом.
+		</p>
+		<p class="heading">
+			Теги кнопок
+		</p>
+		<p>
+			Эти <span>.btn</span> классы предназначены для использования с <span>&#60;button&#62;</span> элементом. Тем не менее, вы также можете использовать эти классы <span>&#60;a&#62;</span> или <span>&#60;input&#62;</span> элементы (хотя некоторые браузеры могут применять немного другой рендеринг).
+		</p>
+		<p>
+			При использовании классов кнопок для <span>&#60;a&#62;</span>элементов, которые используются для запуска внутристраничной функциональности (например, свертывание содержимого), вместо ссылки на новые страницы или разделы на текущей странице, эти ссылки должны быть предоставлены, <span>role="button"</span>чтобы надлежащим образом передать их назначение вспомогательным технологиям, таким как программы чтения с экрана.
+		</p>
+		<div class="container">
+			<div class="row">
+				<a class="btn btn-primary" href="#" role="button">Link</a>
+				<button class="btn btn-primary" type="submit">Button</button>
+				<input class="btn btn-primary" type="button" value="Input">
+				<input class="btn btn-primary" type="submit" value="Submit">
+				<input class="btn btn-primary" type="reset" value="Reset">
+			</div>
+		</div>
+		<pre>
+			&#60;a class="btn btn-primary" href="#" role="button"&#62;Link&#60;/a&#62;
+			&#60;button class="btn btn-primary" type="submit"&#62;Button&#60;/button&#62;
+			&#60;input class="btn btn-primary" type="button" value="Input"&#62;
+			&#60;input class="btn btn-primary" type="submit" value="Submit"&#62;
+			&#60;input class="btn btn-primary" type="reset" value="Reset"&#62;
+		</pre>
+		<div class="heading">Кнопки контура</div>
+		<p>
+			Нужна кнопка, но не здоровенные цвета фона, которые они приносят? Замените классы модификаторов по умолчанию на классы <span>.btn-outline-*</span>, чтобы удалить все фоновые изображения и цвета на любой кнопке.
+		</p>
+		<div class="container">
+			<div class="row">
+				<button type="button" class="btn btn-outline-primary">Primary</button>
+				<button type="button" class="btn btn-outline-secondary">Secondary</button>
+				<button type="button" class="btn btn-outline-success">Success</button>
+				<button type="button" class="btn btn-outline-danger">Danger</button>
+				<button type="button" class="btn btn-outline-warning">Warning</button>
+				<button type="button" class="btn btn-outline-info">Info</button>
+				<button type="button" class="btn btn-outline-light">Light</button>
+				<button type="button" class="btn btn-outline-dark">Dark</button>
+			</div>
+		</div>
+		<pre>
+			&#60;button type="button" class="btn btn-outline-primary"&#62;Primary&#60;/button&#62;
+			&#60;button type="button" class="btn btn-outline-secondary"&#62;Secondary&#60;/button&#62;
+			&#60;button type="button" class="btn btn-outline-success"&#62;Success&#60;/button&#62;
+			&#60;button type="button" class="btn btn-outline-danger"&#62;Danger&#60;/button&#62;
+			&#60;button type="button" class="btn btn-outline-warning"&#62;Warning&#60;/button&#62;
+			&#60;button type="button" class="btn btn-outline-info"&#62;Info&#60;/button&#62;
+			&#60;button type="button" class="btn btn-outline-light"&#62;Light&#60;/button&#62;
+			&#60;button type="button" class="btn btn-outline-dark"&#62;Dark&#60;/button&#62;
+		</pre>
+		<div class="heading">Размеры</div>
+		<p>
+			Необычные кнопки больше или меньше? Добавить <span>.btn-lg</span> или <span>.btn-sm</span> для дополнительных размеров.
+		</p>
+		<div class="container">
+			<div class="row">
+				<button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+			</div>
+		</div>
+		<pre>
+		&#60;button type="button" class="btn btn-primary btn-lg"&#62;Large button&#60;/button&#62;
+                &#60;button type="button" class="btn btn-secondary btn-lg"&#62;Large button&#60;/button&#62;
+		</pre>
+		<div class="container">
+			<div class="row">
+				<button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+			</div>
+		</div>
+		<pre>
+		&#60;button type="button" class="btn btn-primary btn-sm">Small button&#60;/button&#62;
+                &#60;button type="button" class="btn btn-secondary btn-sm">Small button&#60;/button&#62;
+		</pre>
+		<p>
+			Создайте кнопки уровня блока - те, которые охватывают всю ширину родительского элемента - путем добавления <span>.btn-block</span>.
+		</p>
+		<div class="container">
+			<div class="row">
+				<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+			</div>
+		</div>
+		<pre>
+		&#60;button type="button" class="btn btn-primary btn-lg btn-block">Block level button&#60;/button&#62;
+                &#60;button type="button" class="btn btn-secondary btn-lg btn-block">Block level button&#60;/button&#62;
+		</pre>
+		<div class="heading">Активное состояние</div>
+		<p>
+			Кнопки будут отображаться нажатыми (с более темным фоном, более темной рамкой и вставленной тенью), когда они активны. <b>Нет необходимости добавлять класс в <span>&#60;button&#62;</span>s, так как они используют псевдокласс</b> . Тем не менее, вы все равно можете принудительно активировать тот же активный внешний вид <span>.active</span>(и включить <span>aria-pressed="true"</span>атрибут), если вам потребуется программно реплицировать состояние.
+		</p>
+		<div class="container">
+			<div class="row">
+				<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+                <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+			</div>
+		</div>
+		<pre>
+		&#60;a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"&#62;Primary link&#60;/a&#62;
+                &#60;a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"&#62;Link&#60;/a&#62;
+		</pre>
+		<div class="heading">Неработающее состояние</div>
+		<p>
+			Сделайте кнопки неактивными, добавив <span>disabled</span> логический атрибут к любому <span>&#60;button&#62;</span> элементу.
+		</p>
+		<p>Отключенные кнопки, использующие <a>элемент, ведут себя немного иначе:</p>
+		<ol>
+			<li><span>&#60;a&#62;disabled</span> Атрибут не поддерживается , поэтому вы должны добавить <span>.disabled</span> класс, чтобы визуально он был отключен.</li>
+			<li>Некоторые перспективные стили включены, чтобы отключить все <span>pointer-events</span> кнопки привязки. В браузерах, которые поддерживают это свойство, вы вообще не увидите отключенный курсор.</li>
+			<li>Отключенные кнопки должны включать <span>aria-disabled="true"</span> атрибут, указывающий состояние элемента для вспомогательных технологий.</li>
+		</ol>
+		<div class="container">
+			<div class="row">
+				<a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+                <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+			</div>
+		</div>
+		<pre>
+	     &#60;a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true"&#62;Primary link&#60;/a&#62;
+             &#60;a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true"&#62;Link&#60;/a&#62;
+		</pre>
+		<div class="heading">Ссылка на функциональность</div>
+		<p>
+			<span>.disabled</span> Класс использует , <span>pointer-events: none</span> чтобы попытаться отключить функциональность линии связи <span>&#60;a&#62;</span> с, но это свойство CSS еще не стандартизированы. Кроме того, даже в браузерах, которые поддерживают эту функцию <span>pointer-events: none</span>, навигация с помощью клавиатуры остается неизменной, а это означает, что зрячие пользователи клавиатуры и пользователи вспомогательных технологий по-прежнему смогут активировать эти ссылки. Поэтому для безопасности добавьте <span>tabindex="-1"</span> атрибут в эти ссылки (чтобы они не фокусировались на клавиатуре) и используйте пользовательский JavaScript, чтобы отключить их функциональность.
+		</p>
+		<div class="heading">Плагин кнопки</div>
+		<p>
+			Делай больше с кнопками. Управляйте состояниями кнопок или создавайте группы кнопок для дополнительных компонентов, таких как панели инструментов.
+		</p>
+		<div class="heading">Переключить состояния</div>
+		<p>
+			Добавить <span>data-toggle="button"</span> для переключения состояния кнопки <span>active</span>. Если вы предварительно переключаете кнопку, вы должны вручную добавить <span>.active</span> класс и <span>aria-pressed="true"</span> к <span>&#60;button&#62;</span>.
+		</p>
+		<div class="heading">Переключить состояния</div>
+		<p>
+			Добавить <span>data-toggle="button"</span> для переключения состояния кнопки <span>active</span>. Если вы предварительно переключаете кнопку, вы должны вручную добавить <span>.active</span> класс и <span>aria-pressed="true"</span> к <span>&#60;button&#62;</span>.
+		</p>
+		<div class="container">
+			<div class="row">
+				<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+					Single toggle
+				</button>
+			</div>
+		</div>
+		<pre>
+&#60;button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"&#62; Single toggle&#60;/button&#62;
+		</pre>
+		<div class="heading">Флажок и радио кнопки</div>
+		<p>
+			<span>.button</span> Стили Bootstrap могут применяться к другим элементам, таким как <span>&#60;label&#62;</span>s, чтобы обеспечить переключение переключателей или переключателей в стиле радио. Добавьте <span>data-toggle="buttons"</span> к <span>.btn-group</span> содержащим эти измененные кнопки, чтобы включить их переключение с помощью JavaScript, и добавьте <span>.btn-group-toggle</span> стили <span>&#60;input&#62;</span> в свои кнопки. <b>Обратите внимание, что вы можете создавать отдельные кнопки с питанием от входа или их группы.</b>
+		</p>
+		<p>
+			Проверенное состояние для этих кнопок <b>обновляется только через <span>click</span> событие</b> на кнопке. Если вы используете другой метод для обновления ввода-например, с <span>&#60;input type="reset"&#62;</span>или вручную нанесением на вход в <span>checked</span> свойства-вы будете необходимости переключения <span>.activeна</span> <span>&#60;label&#62;</span>вручную.
+		</p>
+		<p>
+			Обратите внимание, что предварительно проверенные кнопки требуют, чтобы вы вручную добавили <span>.active</span> класс к входам <span>&#60;label&#62;</span>.
+		</p>
+		<div class="container">
+			<div class="row">
+				<div class="btn-group-toggle" data-toggle="buttons">
+				  <label class="btn btn-secondary active">
+				    <input type="checkbox" checked autocomplete="off"> Checked
+				  </label>
+				</div>
+			</div>
+		</div>
+		<pre>
+		&#60;div class="btn-group-toggle" data-toggle="buttons"&#62;
+		  &#60;label class="btn btn-secondary active"&#62;
+		    &#60;input type="checkbox" checked autocomplete="off"&#62; Checked
+		  &#60;/label&#62;
+		&#60;/div&#62;
+		</pre>
+		<div class="container">
+			<div class="row">
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				  <label class="btn btn-secondary active">
+				    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+				  </label>
+				</div>
+			</div>
+		</div>
+		<pre>
+		&#60;div class="btn-group btn-group-toggle" data-toggle="buttons"&#62;
+		  &#60;label class="btn btn-secondary active"&#62;
+		    &#60;input type="radio" name="options" id="option1" autocomplete="off" checked&#62; Active
+		  &#60;/label&#62;
+		  &#60;label class="btn btn-secondary"&#62;
+		    &#60;input type="radio" name="options" id="option2" autocomplete="off"&#62; Radio
+		  &#60;/label&#62;
+		  &#60;label class="btn btn-secondary"&#62;
+		    &#60;input type="radio" name="options" id="option3" autocomplete="off"&#62; Radio
+		  &#60;/label&#62;
+		&#60;/div&#62;
+		</pre>
+		<div class="heading">методы</div>
+		<div class="tabl">
+			<table>
+				<tr>
+					<td>Метод</td>
+					<td>Описание</td>
+				</tr>
+				<tr>
+					<td>$().button('toggle')</td>
+					<td>Переключает состояние нажатия. Придает кнопке вид, что она была активирована.</td>
+				</tr>
+				<tr>
+					<td>$().button('dispose')</td>
+					<td>Уничтожает кнопку элемента.</td>
+				</tr>
+			</table>
+		</div>
+		<div class="heading footer">
+			<a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp">Дополнительная информация</a>
+			<a href="index.html">На главную</a>
+	
+	    </div>	   
+	</div>
+
+	
+		
+</body>
+</html>

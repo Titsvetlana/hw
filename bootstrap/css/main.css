@@ -1,0 +1,84 @@
+@import "tables.css";
+@import url(bootsons.css);
+@import url(images.css);
+@import url(forms.css);
+@import url(grid_system.css);
+
+*{
+    font-family: "Roboto", Arial, sans-serif;
+	color: #141414;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;	
+}
+nav{
+	margin-bottom: 10%;
+}
+.menu{
+	position: fixed;
+	display: flex;
+	left: 200px;
+	top: 0;
+	z-index: 1;	
+}
+.menu li a{
+	display: block;
+	background-color: #B939D3;
+	padding: 15px 30px 15px 40px;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid rgba(34, 99, 36, .9);
+	transition: all 0.4s ease;
+}
+.display-1{
+	font-weight: 800 !important;
+}
+.introduction, .features{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.heading{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+ol>li{
+	font-weight: 700;
+}
+ul>li{
+	font-weight: normal;
+	list-style: none;	
+}
+.container{
+	margin-top: 50px;
+}
+pre{
+	padding-top: 30px;
+	font-weight: 600;
+	font-family: Roboto, sans-serif !important;
+	font-size: 16px !important;
+	color: #141417 !important;
+	background-color: rgba(185, 7, 240, .1);
+}
+span{
+	color: #B939D3;
+	font-weight: 700;
+}
+ 
+.footer{
+	display: flex;
+	justify-content: space-between;
+}
+.footer a{
+	color: #010424    ;
+}
+h3, h5{
+	padding-top: 30px;
+}
+

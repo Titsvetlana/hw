@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms Bootstrap</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="CSS Buttons.html">CSS Buttons</a>
+			</li>
+			<li>
+				<a href="CSS Forms.html">CSS Forms</a>
+			</li>
+			<li>
+				<a href="CSS Images.html">CSS Images</a>
+			</li>
+			<li>
+				<a href="CSS Tables.html">CSS Tables</a>
+			</li>
+			<li>
+				<a href="Grid System.html">Grid System</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="features">
+		<h2>Формы</h2>
+		<p><i>
+			Примеры и рекомендации по использованию стилей управления формой, параметров макета и пользовательских компонентов для создания широкого спектра форм.
+		</i></p>
+		<h3>Обзор</h3>
+		<p>
+			Формы в Bootstrap по сути являются просто расширением наших <span>Перезагруженных стилей форм</span> с добавлением классов. Используйте эти классы для более точной настройки отображения и лучшей отрисовки на разных браузерах и устройствах.
+		</p>
+		<p>
+			Удостоверьтесь, что используете правильный атрибут <span>type</span> во всех формах ввода (т.е., <span>email</span> для почты и <span>number</span> для цифровой информации), это даст вам преимущества в виде новейших инструментов (таких как проверка email, выборка чисел и т.д.) контроля данных ввода.
+		</p>
+		<p>
+			Вот демонстрация стилей форм Bootstrap. Читайте документацию по требуемым классам, расположению форм и т.д.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<div class="form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+				</div>
+				    <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<pre>
+			&#60;form>
+				&#60;div class="form-group"&#62;
+				    &#60;label for="exampleInputEmail1"&#62;Email address&#60;/label&#62;
+				    &#60;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&#62;
+				    &#60;small id="emailHelp" class="form-text text-muted"&#62;We'll never share your email with anyone else.&#60;/small&#62;
+				&#60;/div&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="exampleInputPassword1"&#62;Password&#60;/label&#62;
+				    &#60;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&#62;
+				&#60;/div&#62;
+				&#60;div class="form-check"&#62;
+				    &#60;input type="checkbox" class="form-check-input" id="exampleCheck1"&#62;
+				    &#60;label class="form-check-label" for="exampleCheck1"&#62;Check me out&#60;/label&#62;
+				&#60;/div&#62;
+				    &#60;button type="submit" class="btn btn-primary"&#62;Submit&#60;/button&#62;
+			&#60;/form&#62;
+		</pre>
+
+		<h3>Инструменты контроля форм</h3>
+		<p>
+			Текстовые инструменты контроля – такие как <span>&#60;input&#62;, &#60;select&#62;</span> и <span>&#60;textarea&#62;</span> - стилизованы классом .form-control, который содержит основные стили внешнего вида, активного состояния, размерности и т.д.
+		</p>
+		<p>
+			Изучите наши обычные формы для дальнейшего понимания стилизации <span>&#60;select&#62;</span>.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-group">
+				    <label for="exampleFormControlInput1">Email address</label>
+				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+				</div>
+				<div class="form-group">
+				    <label for="exampleFormControlSelect1">Example select</label>
+				    <select class="form-control" id="exampleFormControlSelect1">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					    <option>5</option>
+				    </select>
+				</div>
+				<div class="form-group">
+				    <label for="exampleFormControlSelect2">Example multiple select</label>
+				    <select multiple class="form-control" id="exampleFormControlSelect2">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					    <option>5</option>
+				    </select>
+				</div>
+			    <div class="form-group">
+				    <label for="exampleFormControlTextarea1">Example textarea</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+			</form>
+		</div>
+		<pre>
+			&#60;form&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="exampleFormControlInput1"&#62;Email address&#60;/label&#62;
+				    &#60;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&#62;
+				&#60;/div&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="exampleFormControlSelect1">Example select&#60;/label>
+				    &#60;select class="form-control" id="exampleFormControlSelect1">
+					    &#60;option&#62;1&#60;/option&#62;
+					    &#60;option&#62;2&#60;/option&#62;
+					    &#60;option&#62;3&#60;/option&#62;
+					    &#60;option&#62;4&#60;/option&#62;
+					    &#60;option&#62;5&#60;/option&#62;
+				    &#60;/select&#62;
+				&#60;/div&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="exampleFormControlSelect2"&#62;Example multiple select&#60;/label&#62;
+				    &#60;select multiple class="form-control" id="exampleFormControlSelect2"&#62;
+					    &#60;option&#62;1&#60;/option&#62;
+					    &#60;option&#62;2&#60;/option&#62;
+					    &#60;option&#62;3&#60;/option&#62;
+					    &#60;option&#62;4&#60;/option&#62;
+					    &#60;option&#62;5&#60;/option&#62;
+				    &#60;/select&#62;
+				&#60;/div&#62;
+			    &#60;div class="form-group"&#62;
+				    &#60;label for="exampleFormControlTextarea1"&#62;Example textarea&#60;/label&#62;
+				    &#60;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&#62;&#60;/textarea&#62;
+				&#60;/div&#62;
+			&#60;/form&#62;
+		</pre>
+		<p>
+			Для создания формы загрузки файлов замените <span>.form-control</span> на <span>.form-control-file</span>.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-group">
+				    <label for="exampleFormControlFile1">Example file input</label>
+				    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+				</div>
+			</form>
+		</div>
+		<pre>
+			&#60;form&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="exampleFormControlFile1">Example file input&#60;/label&#62;
+				    &#60;input type="file" class="form-control-file" id="exampleFormControlFile1"&#62;
+				&#60;/div&#62;
+			&#60;/form&#62;
+		</pre>
+
+		<h3>Размерность</h3>
+		<p>
+			Для создания форм заданной высоты используются классы, такие как <span>.form-control-lg</span> и <span>.form-control-sm</span>.
+		</p>
+		<div class="container">
+			<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+			<input class="form-control" type="text" placeholder="Default input">
+			<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+		</div>
+		<pre>
+			&#60;input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"&#62;
+			&#60;input class="form-control" type="text" placeholder="Default input"&#62;
+			&#60;input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"&#62;
+		</pre>
+		<div class="container">
+		    <select class="form-control form-control-lg">
+			  <option>Large select</option>
+			</select>
+			<select class="form-control">
+			  <option>Default select</option>
+			</select>
+			<select class="form-control form-control-sm">
+			  <option>Small select</option>
+			</select>
+		</div>
+		<pre>
+			&#60;select class="form-control form-control-lg"&#62;
+			  &#60;option>Large select&#60;/option&#62;
+			&#60;/select&#62;
+			&#60;select class="form-control"&#62;
+			  &#60;option&#62;Default select&#60;/option&#62;
+			&#60;/select&#62;
+			&#60;select class="form-control form-control-sm"&#62;
+			  &#60;option&#62;Small select&#60;/option&#62;
+			&#60;/select&#62;
+		</pre>
+
+		<h3>&#60;&#60;Только чтение&#62;&#62;</h3>
+		<p>
+			Добавьте атрибут булеанова типа <span>readonly</span> в форму ввода для предотвращения возможности изменения значения ввода. Такие типы ввода выглядят светлее (как неактивные формы ввода), но сохраняют стандартный курсор.
+		</p>
+		<div class="container">
+			<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+		</div>
+		<pre>
+			&#60;input class="form-control" type="text" placeholder="Readonly input here…" readonly&#62;
+		</pre>
+
+		<h3>Простой текст только для чтения</h3>
+		<p>
+			Если в ваших формах вы хотите стилизовать элементы <span>&#60;input readonly&#62;</span> как простой текст, используйте класс <span>.form-control-plaintext</span> для удаления оформления форм по умолчанию и сохранения правильных отступов.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-group row">
+				    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+				    <div class="col-sm-10">
+				       <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+				    </div>
+				</div>
+				<div class="form-group row">
+				    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+				    <div class="col-sm-10">
+				       <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+				    </div>
+				</div>
+			</form>
+		</div>
+		<pre>
+			&#60;form&#62;
+				&#60;div class="form-group row"&#62;
+				    &#60;label for="staticEmail" class="col-sm-2 col-form-label"&#62;Email&#60;/label&#62;
+				    &#60;div class="col-sm-10"&#62;
+				       &#60;input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"&#62;
+				    &#60;/div&#62;
+				&#60;/div&#62;
+				&#60;div class="form-group row"&#62;
+				    &#60;label for="inputPassword" class="col-sm-2 col-form-label"&#62;Password&#60;/label&#62;
+				    &#60;div class="col-sm-10"&#62;
+				       &#60;input type="password" class="form-control" id="inputPassword" placeholder="Password"&#62;
+				    &#60;/div&#62;
+				&#60;/div&#62;
+			&#60;/form&#62;
+		</pre>
+		<div class="container">
+			<form class="form-inline">
+				<div class="form-group mb-2">
+				    <label for="staticEmail2" class="sr-only">Email</label>
+				    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+				</div>
+				<div class="form-group mx-sm-3 mb-2">
+				    <label for="inputPassword2" class="sr-only">Password</label>
+				    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+				</div>
+				    <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+			</form>
+		</div>
+		<pre>
+			&#60;form class="form-inline"&#62;
+				&#60;div class="form-group mb-2"&#62;
+				    &#60;label for="staticEmail2" class="sr-only"&#62;Email&#60;/label&#62;
+				    &#60;input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com"&#62;
+				&#60;/div&#62;
+				&#60;div class="form-group mx-sm-3 mb-2"&#62;
+				    &#60;label for="inputPassword2" class="sr-only"&#62;Password&#60;/label&#62;
+				    &#60;input type="password" class="form-control" id="inputPassword2" placeholder="Password"&#62;
+				&#60;/div&#62;
+				    &#60;button type="submit" class="btn btn-primary mb-2"&#62;Confirm identity&#60;/button&#62;
+			&#60;/form&#62;
+		</pre>
+		<h3>Чекбоксы и кнопки &#60;радио&#62;</h3>
+		<p>
+			Чекбоксы и «радио», существовавшие по умолчанию, теперь модернизированы единым для обоих классом <span>.form-check</span>, <b>цель которого – в улучшении их расположения и «поведения» их элементов HTML.</b> Чекбоксы существуют для выбора одного или нескольких параметров из списка, а кнопки «радио» - одного.
+		</p>
+		<p>
+			Неактивные состояния чекбоксоы и "радио" поддерживаются, но для придания курсору функциональности <span>not-allowed</span> по наведению на родительский <span>&#60;label&#62;</span> вам потребуется добавить в <span>.form-check-input</span> атрибут <span>disabled</span>. Атрибут <span>disabled</span> будет применять более светлый цвет, чтобы указать состояние ввода.
+		</p>
+		<p>
+			Использование чекбоксов и "радио" имеет целью поддержать HTML-форму валидации и обеспечить понятные, доступные лейблы. Поэтому наши <span>&#60;input&#62;</span> и <span>&#60;label&#62;</span> - имеют одного родителя, в отличие от <span>&#60;input&#62;</span>, расположенного внутри <span>&#60;label&#62;</span>. Это немного более подробно, так как вы должны указывать атрибуты <span>id</span> и <span>for</span> для связи <span>&#60;input&#62;</span> и <span>&#60;label&#62;</span>.
+		</p>
+
+		<h3>По умолчанию (расположенные по вертикали)</h3>
+		<p>
+			По умолчанию, любое количество идущих один за другим чекбоксов и «радио» кнопок будет располагаться сверху вниз, а класс <span>.form-check</span> правильно отрегулирует пространство между ними.
+		</p>
+		<div class="container">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+				<label class="form-check-label" for="defaultCheck1">
+				    Default checkbox
+				</label>
+		    </div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+				<label class="form-check-label" for="defaultCheck2">
+				   Disabled checkbox
+				</label>
+			</div>
+		</div>
+		<pre>
+			&#60;div class="form-check"&#62;
+				&#60;input class="form-check-input" type="checkbox" value="" id="defaultCheck1"&#62;
+				&#60;label class="form-check-label" for="defaultCheck1"&#62;
+				    Default checkbox
+				&#60;/label&#62;
+		    &#60;/div&#62;
+			&#60;div class="form-check"&#62;
+				&#60;input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled&#62;
+				&#60;label class="form-check-label" for="defaultCheck2"&#62;
+				   Disabled checkbox
+				&#60;/label&#62;
+			&#60;/div>&#62;
+		</pre>
+		<div class="container">
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+				<label class="form-check-label" for="exampleRadios1">
+				    Default radio
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+				<label class="form-check-label" for="exampleRadios2">
+				    Second default radio
+				</label>
+			</div>
+			<div class="form-check disabled">
+				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+				<label class="form-check-label" for="exampleRadios3">
+				    Disabled radio
+				</label>
+			</div>
+		</div>
+		<pre>
+			&#60;div class="form-check"&#62;
+				&#60;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked&#62;
+				&#60;label class="form-check-label" for="exampleRadios1"&#62;
+				    Default radio
+				&#60;/label&#62;
+			&#60;/div&#62;
+			&#60;div class="form-check"&#62;
+				&#60;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"&#62;
+				&#60;label class="form-check-label" for="exampleRadios2"&#62;
+				    Second default radio
+				&#60;/label&#62;
+			&#60;/div&#62;
+			&#60;div class="form-check disabled"&#62;
+				&#60;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled&#62;
+				&#60;label class="form-check-label" for="exampleRadios3"&#62;
+				    Disabled radio
+				&#60;/label&#62;
+			&#60;/div&#62;
+		</pre>
+
+		<h3>Встроенные</h3>
+		<p>
+			Группируйте чекбоксы или «радио» кнопки по одной горизонтальной линии, добавив класс <span>.form-check-inline</span> в любой элемент класса <span>.form-check</span>.
+		</p>
+		<div class="container">
+			<div class="form-check form-check-inline">
+			  	<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+			  	<label class="form-check-label" for="inlineCheckbox1">1</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  	<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+			  	<label class="form-check-label" for="inlineCheckbox2">2</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  	<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+			  	<label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+			</div>
+		</div>
+		<pre>
+			&#60;div class="form-check form-check-inline"&#62;
+			  	&#60;input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"&#62;
+			  	&#60;label class="form-check-label" for="inlineCheckbox1"&#62;1&#60;/label&#62;
+			&#60;/div&#62;
+			&#60;div class="form-check form-check-inline"&#62;
+			  	&#60;input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"&#62;
+			  	&#60;label class="form-check-label" for="inlineCheckbox2"&#62;2&#60;/label>&#62;
+			&#60;/div&#62;
+			&#60;div class="form-check form-check-inline"&#62;
+			  	&#60;input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled&#62;
+			  	&#60;label class="form-check-label" for="inlineCheckbox3"&#62;3 (disabled)&#60;/label&#62;
+			&#60;/div&#62;
+		</pre>
+		<div class="container">
+			<div class="form-check form-check-inline">
+			   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+			   <label class="form-check-label" for="inlineRadio1">1</label>
+			</div>
+			<div class="form-check form-check-inline">
+			   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			   <label class="form-check-label" for="inlineRadio2">2</label>
+			</div>
+			<div class="form-check form-check-inline">
+			   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+			   <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+			</div>
+		</div>
+		<pre>
+			&#60;div class="form-check form-check-inline"&#62;
+				   &#60;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&#62;
+				   &#60;label class="form-check-label" for="inlineRadio1"&#62;1&#60;/label&#62;
+			&#60;/div&#62;
+			&#60;div class="form-check form-check-inline"&#62;
+				   &#60;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&#62;
+				   &#60;label class="form-check-label" for="inlineRadio2"&#62;2&#60;/label&#62;
+			&#60;&#60;/div&#62;
+			&#60;div class="form-check form-check-inline"&#62;
+				   &#60;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled&#62;
+				   &#60;label class="form-check-label" for="inlineRadio3"&#62;3 (disabled)&#60;/label&#62;
+			&#60;/div&#62;
+		</pre>
+		<h3>Без ярлыков</h3>
+		<p>
+			Добавьте класс <span>.position-static</span> в формы ввода, которые находятся внутри элемента класса <span>.form-check</span> и не имеют какого-либо пояснительного текста. Не забудьте добавить одну из форм «лейбла» для вспомогательных технологий (например, использовав <span>aria-label</span>).
+		</p>
+		<div class="container">
+			<div class="form-check">
+				  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+			</div>
+			<div class="form-check">
+				  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+			</div>
+		</div>
+		<pre>
+			&#60;div class="form-check"&#62;
+				  &#60;input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."&#62;
+			&#60;/div&#62;
+			&#60;div class="form-check"&#62;
+				  &#60;input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."&#62;
+			&#60;/div&#62;
+		</pre>
+
+		<h3>Расположение</h3>
+		<p>
+			Т.к. Bootstrap применяет <span>display: block</span> и <span>width: 100%</span> почти ко всем органам контроля форм, формы по умолчанию будут выстраиваться вертикально. Дополнительные классы можно использовать для создания вариаций расположения каждой отдельной формы.
+		</p>
+
+		<h3>Группы форм</h3>
+		<p>
+			Класс <span>.form-group</span> – самый простой путь придания формам некой структуры. Его единственная цель – создание вокруг надписи margin-bottom и включение контроля. В качестве приятного дополнения: поскольку это обычный класс, его можно использовать с <span>&#60;fieldset&#62;</span>, <span>&#60;div&#62;</span> или практически любым прочим элементом.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-group">
+				    <label for="formGroupExampleInput">Example label</label>
+				    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+				</div>
+				<div class="form-group">
+				    <label for="formGroupExampleInput2">Another label</label>
+				    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+				</div>
+			</form>
+		</div>
+		<pre>
+			&#60;form&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="formGroupExampleInput"&#62;Example label&#60;/label&#62;
+				    &#60;input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"&#62;
+				&#60;/div&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="formGroupExampleInput2"&#62;Another label&#60;/label&#62;
+				    &#60;input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input"&#62;
+				&#60;/div&#62;
+			&#60;/form&#62;
+		</pre>
+
+		<h3>Сетка форм</h3>
+		<p>
+			Используйте их для расположения форм, которые требуют множественных колонок, различной ширины и других дополнительных параметров выравнивания.
+		</p>
+		<div class="container">
+			<form>
+				<div class="row">
+				    <div class="col">
+				       <input type="text" class="form-control" placeholder="Имя">
+				    </div>
+				    <div class="col">
+				       <input type="text" class="form-control" placeholder="Фамилия">
+				    </div>
+				</div>
+			</form>
+		</div>
+		<pre>
+			&#60;form&#62;
+				&#60;div class="row"&#62;
+				    &#60;div class="col"&#62;
+				       &#60;input type="text" class="form-control" placeholder="Имя"&#62;
+				    &#60;/div&#62;
+				    &#60;div class="col"&#62;
+				       &#60;input type="text" class="form-control" placeholder="Фамилия"&#62;
+				    &#60;/div&#62;
+				&#60;/div&#62;
+			&#60;/form&#62;
+		</pre>
+
+		<h3>Ряд форм</h3>
+		<p>
+			Вы также можете заменить <span>.row</span> на класс <span>.form-row</span>, который есть разновидность нашего стандартного ряда сетки, который обладает возможностью «перебить» стандартно установленные расстояния между колонками и делает колонки более компактными.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-row">
+				    <div class="col">
+				       <input type="text" class="form-control" placeholder="Имя">
+				    </div>
+				    <div class="col">
+				       <input type="text" class="form-control" placeholder="Фамилия">
+				    </div>
+				</div>
+			</form>
+		</div>
+		<pre>
+			&#60;form&#62;
+				&#60;div class="form-row"&#62;
+				    &#60;div class="col"&#62;
+				       &#60;input type="text" class="form-control" placeholder="Имя"&#62;
+				    &#60;/div&#62;
+				    &#60;div class="col"&#62;
+				       &#60;input type="text" class="form-control" placeholder="Фамилия"&#62;
+				    &#60;/div&#62;
+				&#60;/div&#62;
+			&#60;/form&#62;
+		</pre>
+		<p>
+			Более сложную разметку можно также создать системой сеток.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-row">
+				    <div class="form-group col-md-6">
+				       <label for="inputEmail4">Email</label>
+				       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+				    </div>
+				    <div class="form-group col-md-6">
+				       <label for="inputPassword4">Password</label>
+				       <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <label for="inputAddress">Address</label>
+				    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+				</div>
+				<div class="form-group">
+				    <label for="inputAddress2">Address 2</label>
+				    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+				</div>
+				<div class="form-row">
+				    <div class="form-group col-md-6">
+				       <label for="inputCity">City</label>
+				       <input type="text" class="form-control" id="inputCity">
+				    </div>
+				    <div class="form-group col-md-4">
+				       <label for="inputState">State</label>
+				       <select id="inputState" class="form-control">
+				           <option selected>Choose...</option>
+				           <option>...</option>
+				       </select>
+				    </div>
+				    <div class="form-group col-md-2">
+				       <label for="inputZip">Zip</label>
+				       <input type="text" class="form-control" id="inputZip">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <div class="form-check">
+				       <label class="form-check-label">
+				          <input class="form-check-input" type="checkbox"> Check me out
+				       </label>
+				    </div>
+				</div>
+				<button type="submit" class="btn btn-primary">Sign in</button>
+			</form>
+		</div>
+
+		<h3>Горизонтальные формы</h3>
+		<p>
+			Создайте горизонтальные формы с помощью сеток, добавив класс <span>.row</span> к группам форм и используя классы <span>.col-*-*</span> для задания ширины ваших надписей и элементов контроля. Обязательно добавьте класс <span>.col-form-label</span> также и в ваши <span>&#60;label&#62;</span> для того, чтобы они приобрели вертикальное центрирование относительно связанных с ними элементов контроля форм.
+		</p>
+		<p>
+			Временами вам может понадобиться классы марджина или паддинга, чтобы создать классное выравнивание. Например, мы удалили <span>padding-top</span> в наших вертикально расположенных лейблах ввода "радио", для лучшего выравнивания текста.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-group row">
+				    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+				    <div class="col-sm-10">
+				       <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				    </div>
+				</div>
+				<div class="form-group row">
+				    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+				    <div class="col-sm-10">
+				       <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				    </div>
+				</div>
+				<fieldset class="form-group">
+				    <div class="row">
+				       <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+				       <div class="col-sm-10">
+					        <div class="form-check">
+					           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					           <label class="form-check-label" for="gridRadios1">
+					            First radio
+					           </label>
+					        </div>
+				        <div class="form-check">
+				            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+				            <label class="form-check-label" for="gridRadios2">
+				            Second radio
+				            </label>
+				        </div>
+				        <div class="form-check disabled">
+				            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+				            <label class="form-check-label" for="gridRadios3">
+				            Third disabled radio
+				            </label>
+				        </div>
+				      </div>
+				    </div>
+				</fieldset>
+				<div class="form-group row">
+				    <div class="col-sm-2">Checkbox</div>
+				    <div class="col-sm-10">
+					    <div class="form-check">
+					        <input class="form-check-input" type="checkbox" id="gridCheck1">
+					        <label class="form-check-label" for="gridCheck1">
+					          Example checkbox
+					        </label>
+					    </div>
+				    </div>
+				</div>
+				<div class="form-group row">
+				    <div class="col-sm-10">
+				        <button type="submit" class="btn btn-primary">Sign in</button>
+				    </div>
+				</div>
+		    </form>
+		</div>
+
+		<h5>Размеры надписей горизонтальных форм</h5>
+		<p>
+			Обязательно используйте классы <span>.col-form-label-sm</span> или <span>.col-form-label-lg</span> в своих &#60;label&#62; для того, чтобы размеры шрифтов названия формы и вспомогательной надписи в пустой форме (т.н. placeholder) ввода совпадали.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-group row">
+				    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+				    <div class="col-sm-10">
+				       <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+				    </div>
+				</div>
+				<div class="form-group row">
+				    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+				    <div class="col-sm-10">
+				       <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+				    </div>
+				</div>
+				<div class="form-group row">
+				    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+				    <div class="col-sm-10">
+				       <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+				    </div>
+				</div>
+			</form>
+		</div>
+		<h3>Размеры колонок</h3>
+		<p>
+			Как показано в предыдущих примерах, наша система сеток позволит вам расположить любое количество классов <span>.col</span> внутри рядов класса <span>.row</span> или <span>.form-row</span>. Такая верстка разделит доступную ширину поровну между колонками. Вы также можете создать субнабор колонок, которые займут либо меньше, либо больше места (как необходимо), в то время как колонки класса <span>.col</span> равномерно распределятся по оставшейся ширине, к примеру, как классы <span>.col-7</span>.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-row">
+				    <div class="col-7">
+				       <input type="text" class="form-control" placeholder="City">
+				    </div>
+				    <div class="col">
+				       <input type="text" class="form-control" placeholder="State">
+				    </div>
+				    <div class="col">
+				       <input type="text" class="form-control" placeholder="Zip">
+				    </div>
+				</div>
+			</form>
+		</div>
+
+		<h3>Авторазмеры</h3>
+		<p>
+			В примере ниже для вертикального центрирования содержимого используются обычные инструменты флексбокса, также в нем использован класс <span>.col</span> вместо <span>.col-auto</span> - что заставляет колонки занять места лишь столько, сколько необходимо.
+		</p>
+		<div class="container">
+			<form>
+				<div class="form-row align-items-center">
+				    <div class="col-auto">
+				      <label class="sr-only" for="inlineFormInput">Name</label>
+				      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+				    </div>
+				    <div class="col-auto">
+				      <label class="sr-only" for="inlineFormInputGroup">Имя пользователя</label>
+				      <div class="input-group mb-2">
+				        <div class="input-group-prepend">
+				           <div class="input-group-text">@</div>
+				        </div>
+				        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Имя пользователя">
+				      </div>
+				    </div>
+				    <div class="col-auto">
+				      <div class="form-check mb-2">
+				         <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+				         <label class="form-check-label" for="autoSizingCheck">
+				          Remember me
+				        </label>
+				      </div>
+				    </div>
+				    <div class="col-auto">
+				       <button type="submit" class="btn btn-primary mb-2">Submit</button>
+				    </div>
+				</div>
+			</form>
+		</div>
+		<p>
+			Вы можете заменить их опять на классы колонок определенного размера.
+		</p>
+		<p>
+			И, разумеется – поддерживаются обычные формы контроля.
+		</p>
+
+		<h3>Вложенные формы</h3>
+		<p>
+			Используйте класс <span>.form-inline</span> для отображения серии лейблов, органов контроля форм и кнопок на одном горизонтальном ряду. Органы контроля форм внутри строчных форм могут слегка отличаться от своего состояния по умолчанию.
+		</p>
+		<ol>
+			<li>Органы контроля имеют <span>display: flex</span>, что скрывает пустое пространство в HTML и позволяет вам обеспечить контроль над выравниванием с помощью утилит <i>спейсинга</i> и <i>флексбокса</i>.</li>
+			<li>Органы контроля и группы ввода имеют <span>width: auto</span>, который &#60;перебивает&#62; умолчание Bootstrap <span>width: 100%</span>.</li>
+			<li>На <b>зонах видимости от 576рх<b> органы контроля отображаются как строчные элементы для удобства отображения на узких зонах просмотра.</li>
+		</ol>
+		<p>
+			Вам может понадобиться вручную задать ширину и выравнивание каждого элемента контроля форм, используя <i>утилиты спейсинга</i> (как показано ниже).Всегда включайте <span>&#60;label&#62;</span> в каждый элемент контроля, даже если вы хотите спрятать его с помощью класса <span>.sr-only</span> от читателей, которые не используют экранные читалки.
+		</p>
+		<h3>Вспомогательный текст</h3>
+		<p>
+			Блочный вспомогательный текст в формах можно создать классом <span>.form-text</span> (<span>.help-block</span> в BS3). Линейный текст можно гибко внедрить с помощью любого строчного элемента HTML и классов типа <span>.text-muted</span>.
+		</p>
+		<h5>Связь вспомогательного текста с органами контроля форм</h5>
+		<p>
+			Вспомогательный текст должен быть явно связан с родственными его элементами контроля форм, это делается атрибутом <span>aria-describedby</span>. Это обеспечит вспомогательным технологиям (таким как экранные читалки) возможность прочитать этот текст, когда юзер обращается к связанному с этим текстом элементу контроля.
+		</p>
+		<p>
+			Вспомогательный текст, расположенный ниже поля ввода, можно стилизовать классом <span>.form-text</span>, который содержит свойство <span>display: block</span> и добавляет верхний марджин для увеличения отступа от поля ввода выше.
+		</p>
+		<div class="container">
+			<label for="inputPassword5">Password</label>
+			<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+			<small id="passwordHelpBlock" class="form-text text-muted">
+			  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+			</small>
+		</div>
+		<pre>
+			&#60;label for="inputPassword5"&#62;Password&#60;/label&#62;
+			&#60;input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"&#62;
+			&#60;small id="passwordHelpBlock" class="form-text text-muted"&#62;
+			  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+			&#60;/small&#62;
+		</pre>
+		<p>
+			Строчный текст может использовать любой строчный элемент HTML (неважно: <small>, <span> или другой) с обычным классом.
+		</p>
+		<div class="container">
+			<form class="form-inline">
+				<div class="form-group">
+				    <label for="inputPassword6">Password</label>
+				    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+				    <small id="passwordHelpInline" class="text-muted">
+				      Must be 8-20 characters long.
+				    </small>
+				</div>
+			</form>
+		</div>
+		<pre>
+			&#60;form class="form-inline"&#62;
+				&#60;div class="form-group"&#62;
+				    &#60;label for="inputPassword6"&#62;Password&#60;/label&#62;
+				    &#60;input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline"&#62;
+				    &#60;small id="passwordHelpInline" class="text-muted"&#62;
+				      Must be 8-20 characters long.
+				    &#60;/small&#62;
+				&#60;/div&#62;
+			&#60;/form&#62;
+		</pre>
+		<h3>Деактивированные формы</h3>
+		<p>
+			Добавьте булеан <span>disabled</span> в форму ввода, чтобы сделать ее светлее и предотвратить возможность взаимодействия юзера с данной формой.
+		</p>
+		<pre>
+			&#60;input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&#62;
+		</pre>
+		<p>
+			Для деактивации элементов контроля внутри <span>&#60;fieldset&#62;</span>, добавьте атрибут <span>disabled</span>.
+		</p>
+		<div class="container">
+			<form>
+				<fieldset disabled>
+				    <div class="form-group">
+				        <label for="disabledTextInput">Disabled input</label>
+				        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+				    </div>
+				    <div class="form-group">
+				        <label for="disabledSelect">Disabled select menu</label>
+				        <select id="disabledSelect" class="form-control">
+				           <option>Disabled select</option>
+				        </select>
+				    </div>
+				    <div class="form-check">
+				        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+				        <label class="form-check-label" for="disabledFieldsetCheck">
+				          Can't check this
+				        </label>
+				    </div>
+				    <button type="submit" class="btn btn-primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<h5>Проблемы со ссылками</h5>
+		<p>
+			По умолчанию браузеры будут рассматривать все нативные элементы контроля форм (элементы <span>&#60;input&#62;</span>, <span>&#60;select&#62;</span> и <span>&#60;button&#62;</span>), находящиеся внутри <span>&#60;fieldset disabled&#62;</span>, как деактивированные, что сделает невозможным взаимодействие с данными элементами, как с клавиатуры, так и мышью. Однако если ваша форма содержит элементы <span>&#60;a ... class="btn btn-*"&#62;</span>, они всего лишь приобретут стиль pointer-events: none. Как было замечено в секции про <i>деактивированное состояние кнопок</i> (и особенно в подсекции про якоря) – это свойство CSS еще не стандартизовано и не полностью поддерживается в Opera версий 18 и ниже и в Internet Explorer 10, и не предотвратит возможность фокусировки или перехода по этим ссылкам для юзеров клавиатуры. Так что для безопасности используйте обычный JS для дезактивации таких ссылок.
+		</p>
+		<h5>Кроссбраузерность</h5>
+		<p>
+			Хотя Bootstrap применяет эти стили во всех браузерах, Internet Explorer 11 и ниже не полностью поддерживает атрибут <span>disabled</span> в <span>&#60;fieldset&#62;</span>. Используйте JS для дезактивации <span>&#60;fieldset&#62;</span> в этих браузерах.
+		</p>
+
+		<h3>Валидация</h3>
+		<p>
+			Получите обратную связь и мощные возможности проверки с помощью валидации форм HTML5 – <i>доступной во всех поддерживаемых браузерах</i>. Выбирайте дефолтную обратную связь валидации от браузера или внедрите стандартные сообщения посредством наших встроенных классов и JavaScript.
+		</p>
+		<p>
+		  <i>
+			Мы настоятельно рекомендуем пользоваться стандартными стилями валидации, поскольку встроенные стили валидации в браузере не взаимодействуют с экранными читалками.
+		  </i>
+		</p>
+		<h3>Всплывающие подсказки</h3>
+		<p>
+			Если разметка ваших форм позволит, вы можете заменить классы <span>.{valid|invalid}-feedback</span> классами <span>.{valid|invalid}-tooltip</span> - для отображения обратной связи валидации, стилизованной под всплывающую подсказку. Для правильного позиционирования всплывающей подсказки удостоверьтесь, что родительский элемент содержит <span>position: relative</span>. В примере ниже наши классы колонок уже имеют этот атрибут, но ваш проект может потребовать иные настройки.
+		</p>
+
+
+
+		
+
+		<div class="heading footer">
+			<a href="https://www.w3schools.com/bootstrap4/bootstrap_forms.asp">Дополнительная информация</a>
+			<a href="index.html">На главную</a>	
+	    </div>
+	</div>
+	
+</body>
+</html>

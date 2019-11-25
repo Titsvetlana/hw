@@ -1,0 +1,11 @@
+.tabl tr:first-child{
+ 	font-weight: 700;	
+}
+.tabl td{
+	padding: 10px 15px;
+	background-color: rgba(194, 186, 186, .7);
+	border: 1px solid rgba(135, 128, 128, .7);
+}
+.tabl table{
+	margin-bottom: 50px;
+}

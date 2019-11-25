@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tables Bootstrap</title>
+	<link rel="stylesheet" href="css/main.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="CSS Buttons.html">CSS Buttons</a>
+			</li>
+			<li>
+				<a href="CSS Forms.html">CSS Forms</a>
+			</li>
+			<li>
+				<a href="CSS Images.html">CSS Images</a>
+			</li>
+			<li>
+				<a href="CSS Tables.html">CSS Tables</a>
+			</li>
+			<li>
+				<a href="Grid System.html">Grid System</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="features">
+		<h3>Bootstrap 4 Basic Table</h3>
+		<p>
+			Базовый стол Bootstrap 4 имеет легкую прокладку и горизонтальные разделители.
+		</p>
+		<p>
+            <span>.table</span> Класс добавляет основные стили к таблице:
+		</p> 
+		<div class="container">	    
+			<table class="table">
+			    <thead>
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+			        </tr>
+			        <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+			        </tr>
+			        <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<pre> 	         
+			  &#60;table class="table"&#62;
+				     &#60;thead&#62;
+					        &#60;tr&#62;
+						          &#60;th&#62;Firstname&#60;/th&#62;
+						          &#60;th&#62;Lastname&#60;/th&#62;
+						          &#60;th&#62;Email&#60;/th&#62;
+					        &#60;/tr&#62;
+				     &#60;/thead&#62;
+				     &#60;tbody&#62;
+					        &#60;tr&#62;
+						          &#60;td&#62;John&#60;/td&#62;
+						          &#60;td&#62;Doe&#60;/td&#62;
+						          &#60;td&#62;john@example.com&#60;/td&#62;
+					        &#60;/tr&#62;
+					        &#60;tr&#62;
+						          &#60;td&#62;Mary&#60;/td&#62;
+						          &#60;td&#62;Moe&#60;/td&#62;
+						          &#60;td&#62;mary@example.com&#60;/td&#62;
+					        &#60;/tr&#62;
+					        &#60;tr&#62;
+							      &#60;td&#62;July&#60;/td&#62;
+							      &#60;td&#62;Dooley&#60;/td&#62;
+							      &#60;td&#62;july@example.com&#60;/td&#62;
+					        &#60;/tr&#62;
+				     &#60;/tbody&#62;
+			  &#60;/table&#62;
+		</pre>
+
+		<h3>Полосатые ряды</h3>
+		<p>
+			<span>.table-striped</span> Класс добавляет зебры полосы к столу:
+		</p>
+	    <div class="container">           
+			<table class="table table-striped">
+			    <thead>
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+				    <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+				    </tr>
+			        <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+			        </tr>
+			        <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<pre>
+			&#60;div class="container"&#62;	           
+			  &#60;table class="table table-striped"&#62;
+				    &#60;thead&#62;
+					     &#60;tr&#62;
+						      &#60;th&#62;Firstname&#60;/th&#62;
+						      &#60;th&#62;Lastname&#60;/th&#62;
+						      &#60;th&#62;Email&#60;/th&#62;
+					      &#60;/tr&#62;
+				    &#60;/thead&#62;
+				    &#60;tbody&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;John&#60;/td&#62;
+						        &#60;td&#62;Doe&#60;/td&#62;
+						        &#60;td&#62;john@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;Mary&#60;/td&#62;
+						        &#60;td&#62;Moe&#60;/td&#62;
+						        &#60;td&#62;mary@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;July&#60;/td&#62;
+						        &#60;td&#62;Dooley&#60;/td&#62;
+						        &#60;td&#62;july@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+				    &#60;/tbody&#62;
+			  &#60;/table&#62;
+			&#60;/div&#62;
+		</pre>
+
+		<h3>Граничный стол</h3>
+		<p>
+			<span>.table-bordered</span> Класс добавляет границы со всех сторон стола и клеток:
+		</p>
+		<div class="container">           
+		    <table class="table table-bordered">
+			    <thead>
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+			        </tr>
+			        <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+			        </tr>
+			        <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+			        </tr>
+			    </tbody>
+		    </table>
+	    </div>
+	    <pre>
+		  	&#60;div class="container"&#62;           
+				&#60;table class="table table-bordered"&#62;
+					    &#60;thead&#62;
+					        &#60;tr&#62;
+						        &#60;th&#62;Firstname&#60;/th&#62;
+						        &#60;th&#62;Lastname&#60;/th&#62;
+						        &#60;th&#62;Email&#60;/th&#62;
+					        &#60;/tr&#62;
+				        &#60;/thead&#62;
+					    &#60;tbody&#62;
+					        &#60;tr&#62;
+						        &#60;td&#62;John&#60;/td&#62;
+						        &#60;td&#62;Doe&#60;/td&#62;
+						        &#60;td&#62;john@example.com&#60;/td&#62;
+					        &#60;/tr&#62;
+						    &#60;tr&#62;
+					            &#60;td&#62;Mary&#60;/td&#62;
+						        &#60;td&#62;Moe&#60;/td&#62;
+						        &#60;td&#62;mary@example.com&#60;/td&#62;
+					        &#60;/tr&#62;
+							&#60;tr&#62;
+						        &#60;td&#62;July&#60;/td&#62;
+						        &#60;td&#62;Dooley&#60;/td&#62;
+						        &#60;td&#62;july@example.com&#60;/td&#62;
+					        &#60;/tr&#62;
+					    &#60;/tbody&#62;
+		    	&#60;/table&#62;
+		    &#60;/div&#62;  	
+		</pre>
+
+		<h3>Ряды наведения</h3>
+	    <p>
+		  <span>.table-hover</span> Класс добавляет эффект парения (серый цвет фона) на строках таблицы:
+		</p>
+	    <div class="container">           
+		  <table class="table table-hover">
+		    <thead>
+		      <tr>
+		        <th>Firstname</th>
+		        <th>Lastname</th>
+		        <th>Email</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>John</td>
+		        <td>Doe</td>
+		        <td>john@example.com</td>
+		      </tr>
+		      <tr>
+		        <td>Mary</td>
+		        <td>Moe</td>
+		        <td>mary@example.com</td>
+		      </tr>
+		      <tr>
+		        <td>July</td>
+		        <td>Dooley</td>
+		        <td>july@example.com</td>
+		      </tr>
+		    </tbody>
+		  </table>
+	    </div>
+		<pre>	
+		 &#60;div class="container"&#62;           
+			 &#60;table class="table table-hover"&#62;
+				   &#60;thead&#62;
+					      &#60;tr&#62;
+						        &#60;th&#62;Firstname&#60;/th&#62;
+						        &#60;th&#62;Lastname&#60;/th&#62;
+						       &#60;th&#62;Email&#60;/th&#62;
+					      &#60;/tr&#62;
+				    &#60;/thead&#62;
+				    &#60;tbody&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;John&#60;/td&#62;
+						        &#60;td&#62;Doe&#60;/td&#62;
+						        &#60;td&#62;john@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;Mary&#60;/td&#62;
+						        &#60;td&#62;Moe&#60;/td&#62;
+						        &#60;td&#62;mary@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;July&#60;/td&#62;
+						        &#60;td&#62;Dooley&#60;/td&#62;
+						        &#60;td&#62;july@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+				    &#60;/tbody&#62;
+			  &#60;/table&#62;
+		 &#60;/div&#62;
+		</pre>
+
+		 <h3>Черный / темный стол</h3>
+	    <p>
+	    	<span>.table-dark</span> Класс добавляет черный фон к таблице:
+	    </p>
+	    <div class="container">           
+	          <table class="table table-dark">
+				    <thead>
+					      <tr>
+					        <th>Firstname</th>
+					        <th>Lastname</th>
+					        <th>Email</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>John</td>
+					        <td>Doe</td>
+					        <td>john@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>Mary</td>
+					        <td>Moe</td>
+					        <td>mary@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>July</td>
+					        <td>Dooley</td>
+					        <td>july@example.com</td>
+					      </tr>
+				    </tbody>
+			  </table>
+        </div>
+        <pre>
+        	&#60;div class="container"&#62;           
+	           &#60;table class="table table-dark"&#62;
+				    &#60;thead&#62;
+					      &#60;tr&#62;
+						        &#60;th&#62;Firstname&#60;/th&#62;
+						        &#60;th&#62;Lastname&#60;/th&#62;
+						        &#60;th&#62;Email&#60;/th&#62;
+					      &#60;/tr&#62;
+					    &#60;/thead&#62;
+					    &#60;tbody&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;John&#60;/td&#62;
+						        &#60;td&#62;Doe&#60;/td&#62;
+						        &#60;td&#62;john@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;Mary&#60;/td&#62;
+						        &#60;td&#62;Moe&#60;/td&#62;
+						        &#60;td&#62;mary@example.com&#60;/tdv
+					      &#60;/tr&#62;
+					      &#60;tr&#62;
+						        &#60;td&#62;July&#60;/td&#62;
+						        &#60;td&#62;Dooley&#60;/td&#62;
+						        &#60;td&#62;july@example.com&#60;/td&#62;
+					      &#60;/tr&#62;
+				    &#60;/tbody&#62;
+			  &#60;/table&#62;
+           &#60;/div&#62;
+        </pre>
+
+        <h3>Стол в темную полоску</h3>
+        <p>
+        	Объедините <span>.table-dark</span> и <span>.table-striped</span> создайте темный полосатый стол:
+        </p>
+		<div class="container">           
+		  <table class="table table-dark table-striped">
+		    <thead>
+		      <tr>
+		        <th>Firstname</th>
+		        <th>Lastname</th>
+		        <th>Email</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>John</td>
+		        <td>Doe</td>
+		        <td>john@example.com</td>
+		      </tr>
+		      <tr>
+		        <td>Mary</td>
+		        <td>Moe</td>
+		        <td>mary@example.com</td>
+		      </tr>
+		      <tr>
+		        <td>July</td>
+		        <td>Dooley</td>
+		        <td>july@example.com</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</div>
+		<pre>			
+			&#60;div class="container"&#62;           
+				  &#60;table class="table table-dark table-striped"&#62;
+					    &#60;thead&#62;
+						      &#60;tr&#62;
+							        &#60;th&#62;Firstname&#60;/th&#62;
+							        &#60;th&#62;Lastname&#60;/th&#62;
+							        &#60;th&#62;Email&#60;/th&#62;
+						      &#60;/tr&#62;
+					    &#60;/thead&#62;
+					    &#60;tbody&#62;
+						      &#60;tr&#62;
+							        &#60;td&#62;John&#60;/td&#62;
+							        &#60;td&#62;Doe&#60;/td&#62;
+							        &#60;td&#62;john@example.com&#60;/td&#62;
+						      &#60;/tr&#62;
+						      &#60;tr&#62;
+							        &#60;td&#62;Mary&#60;/td&#62;
+							        &#60;td&#62;Moe&#60;/td&#62;
+							        &#60;td&#62;mary@example.com&#60;/td&#62;
+						      &#60;/tr&#62;
+						      &#60;tr&#62;
+							        &#60;td&#62;July&#60;/td&#62;
+							        &#60;td&#62;Dooley&#60;/td&#62;
+							        &#60;td&#62;july@example.com&#60;/td&#62;
+						      &#60;/tr&#62;
+					    &#60;/tbody&#62;
+				  &#60;/table&#62;
+			&#60;/div&#62;
+		</pre>
+
+		<h3>Hoverable темный стол</h3>
+		<p>
+		  <span>.table-hover</span> Класс добавляет эффект парения (серый цвет фона) на строках таблицы:
+	    </p>
+		<div class="container">            
+			<table class="table table-dark table-hover">
+			    <thead>
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+				    <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				    </tr>
+			    </tbody>
+		    </table>
+		</div>
+		<pre>
+			&#60;div class="container"&#62;           
+				&#60;table class="table table-dark table-hover"&#62;
+				    &#60;thead&#62;
+					   &#60;tr&#62;
+					        &#60;th&#62;Firstname&#60;/th&#62;
+					        &#60;th&#62;Lastname&#60;/th&#62;
+					        &#60;th&#62;Email&#60;/th&#62;
+					    &#60;/tr&#62;
+				    &#60;/thead&#62;
+				    &#60;tbody&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;John&#60;/td&#62;
+					        &#60;td&#62;Doe&#60;/td&#62;
+					        &#60;td&#62;john@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;Mary&#60;&#60;/td&#62;
+					        &#60;td&#62;Moe&#60;&#60;/td&#62;
+					        &#60;td&#62;mary@example.com&#60;&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;July&#60;/td&#62;
+					        &#60;td&#62;Dooley&#60;/td&#62;
+					        &#60;td&#62;july@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+				    &#60;/tbody&#62;
+			    &#60;/table&#62;
+		    &#60;/div&#62;
+		</pre>
+
+		<h3>Стол без границ</h3>
+		<p>
+			<span>.table-borderless</span> Класс стирает границу из таблицы:
+		</p>
+		<div class="container">           
+			<table class="table table-borderless">
+			    <thead>
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+				    <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				    </tr>
+			    </tbody>
+			</table>
+		</div>
+		<pre>
+			&#60;div class="container"&#62;           
+				&#60;table class="table table-borderless"&#62;
+				    &#60;thead&#62;
+					    &#60;tr&#62;
+					        &#60;th&#62;Firstname&#60;/th&#62;
+					        &#60;th&#62;Lastname&#60;/th&#62;
+					        &#60;th&#62;Email&#60;/th&#62;
+					    &#60;/tr&#62;
+				    &#60;/thead&#62;
+				    &#60;tbody&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;John&#60;/td&#62;
+					        &#60;td&#62;Doe&#60;/td&#62;
+					        &#60;td&#62;john@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;Mary&#60;/td&#62;
+					        &#60;td&#62;Moe&#60;/td&#62;
+					        &#60;td&#62;mary@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;July&#60;/td&#62;
+					        &#60;td&#62;Dooley&#60;/td&#62;
+					        &#60;td&#62;july@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+				    &#60;/tbody&#62;
+				&#60;/table&#62;
+		    &#60;/div&#62;
+		</pre>
+
+		<h3>Контекстные классы</h3>
+		<p>
+			Контекстные классы могут использоваться для окрашивания всей таблицы ( <span>&#60;table&#62;</span>), строк таблицы ( <span>&#60;tr&#62;&#62;</span>) или ячеек таблицы ( <span>&#60;td&#62;</span>).
+		</p>
+		<div class="container">
+			<table class="table">
+			    <thead>
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+				    <tr>
+				        <td>Default</td>
+				        <td>Defaultson</td>
+				        <td>def@somemail.com</td>
+				    </tr>      
+				    <tr class="table-primary">
+				        <td>Primary</td>
+				        <td>Joe</td>
+				        <td>joe@example.com</td>
+				    </tr>
+				    <tr class="table-success">
+				        <td>Success</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+				    </tr>
+				    <tr class="table-danger">
+				        <td>Danger</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				    </tr>
+				    <tr class="table-info">
+				        <td>Info</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				    </tr>
+				    <tr class="table-warning">
+				        <td>Warning</td>
+				        <td>Refs</td>
+				        <td>bo@example.com</td>
+				    </tr>
+				    <tr class="table-active">
+				        <td>Active</td>
+				        <td>Activeson</td>
+				        <td>act@example.com</td>
+				    </tr>
+				    <tr class="table-secondary">
+				        <td>Secondary</td>
+				        <td>Secondson</td>
+				        <td>sec@example.com</td>
+				    </tr>
+				    <tr class="table-light">
+				        <td>Light</td>
+				        <td>Angie</td>
+				        <td>angie@example.com</td>
+				    </tr>
+				    <tr class="table-dark text-dark">
+				        <td>Dark</td>
+				        <td>Bo</td>
+				        <td>bo@example.com</td>
+				    </tr>
+			    </tbody>
+			</table>
+		</div>
+		<pre>
+			&#60;div class="container"&#62;
+				&#60;table class="table"&#62;
+				    &#60;thead&#62;
+						    &#60;tr&#62;
+							        &#60;th&#62;Firstname&#60;/th&#62;
+							        &#60;th&#62;Lastname&#60;/th&#62;
+							        &#60;th&#62;Email&#60;/th&#62;
+						    &#60;/tr&#62;
+				    &#60;thead&#62;
+				    &#60;tbody&#62;
+						    &#60;tr&#62;
+							        &#60;td&#62;Default&#60;/td&#62;
+							        &#60;td&#62;Defaultson&#60;/td&#62;
+							        &#60;td&#62;def@somemail.com&#60;/td&#62;
+						    &#60;/tr&#62;     
+						    &#60;tr class="table-primary"&#62;
+							        &#60;td&#62;Primary&#60;/td&#62;
+							        &#60;td&#62;Joe&#60;/td&#62;
+							        &#60;td&#62;joe@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-success"&#62;
+							        &#60;td&#62;Success&#60;/td&#62;
+							        &#60;td&#62;Doe&#60;/td&#62;
+							        &#60;td&#62;john@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-danger"&#62;
+							        &#60;td&#62;Danger&#60;/td&#62;
+							        &#60;td&#62;Moe&#60;/td&#62;
+							        &#60;td&#62;mary@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-info"&#62;
+							        &#60;td&#62;Info&#60;/td&#62;
+							        &#60;td&#62;Dooley&#60;/td&#62;
+							        &#60;td&#62;july@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-warning"&#62;
+							        &#60;td&#62;Warning&#60;/td&#62;
+							        &#60;td&#62;Refs&#60;/td&#62;
+							        &#60;td&#62;bo@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-active"&#62;
+							        &#60;td&#62;Active&#60;/td&#62;
+							        &#60;td&#62;Activeson&#60;/td&#62;
+							        &#60;td&#62;act@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-secondary"&#62;
+							        &#60;td&#62;Secondary&#60;/td&#62;
+							        &#60;td&#62;Secondson&#60;/td&#62;
+							        &#60;td&#62;sec@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-light"&#62;
+							        &#60;td&#62;Light&#60;/td&#62;
+							        &#60;td&#62;Angie&#60;/td&#62;
+							        &#60;td&#62;angie@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+						    &#60;tr class="table-dark text-dark"&#62;
+							        &#60;td&#62;Dark&#60;/td&#62;
+							        &#60;td&#62;Bo&#60;/td&#62;
+							        &#60;td&#62;bo@example.com&#60;/td&#62;
+						    &#60;/tr&#62;
+				    &#60;/tbody&#62;>
+				&#60;/table&#62;
+		    &#60;/div&#62;
+		</pre>
+
+		<h5>Контекстные классы, которые можно использовать:</h5>
+		<div class="container">           
+			<table class="table table-striped table-bordered">
+			    <thead>
+				    <tr>
+				        <th>Учебный класс</th>
+				        <th>Описание</th>				        
+				    </tr>
+			    </thead>
+			    <tbody class="study">
+				    <tr>
+				        <td>.table-primary</td>
+				        <td>Синий: указывает на важное действие</td>
+				    </tr>
+			        <tr>
+				        <td>.table-success</td>
+				        <td>Зеленый: указывает на успешное или положительное действие</td>
+			        </tr>
+			        <tr>
+				        <td>.table-danger</td>
+				        <td>Красный: указывает на опасное или потенциально негативное действие</td>
+			        </tr>
+			        <tr>
+				        <td>.table-info</td>
+				        <td>Голубой: указывает на нейтральное информативное изменение или действие</td>
+			        </tr>
+			        <tr>
+				        <td>.table-warning</td>
+				        <td>Оранжевый: указывает на предупреждение, которое может потребовать внимания</td>
+			        </tr>
+			        <tr>
+				        <td>.table-active</td>
+				        <td>Серый: применяет цвет наведения к строке или ячейке таблицы</td>
+			        </tr>
+			        <tr>
+				        <td>.table-secondary</td>
+				        <td>Серый: указывает на чуть менее важное действие</td>
+			        </tr>
+			        <tr>
+				        <td>.table-light</td>
+				        <td>Светло-серый фон стола или строки таблицы</td>
+			        </tr>
+			        <tr>
+				        <td>.table-dark</td>
+				        <td>Темно-серый стол или фон строки стола</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+
+		<h3>Цвета Столешницы</h3>
+		<p>
+			<span>.thead-dark</span> Класс добавляет черный фон для заголовков таблиц, а <span>.thead-light</span> класс добавляет серый фон для заголовков таблицы:
+		</p>
+		<div class="container">
+			<table class="table">
+			    <thead class="thead-dark">
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+				    <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				    </tr>
+			    </tbody>
+			</table>
+			<table class="table">
+			    <thead class="thead-light">
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+				    <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				    </tr>
+			    </tbody>
+			</table>
+		</div>
+		<pre>
+			&#60;div class="container"&#62;
+				&#60;table class="table"&#62;
+				   &#60;thead class="thead-dark"&#62;
+					    &#60;tr&#62;
+					        &#60;th&#62;Firstname&#60;/th&#62;
+					        &#60;th&#62;Lastname&#60;/th&#62;
+					        &#60;th&#62;Email&#60;/th&#62;
+					    &#60;/tr&#62;
+				    &#60;/thead&#62;
+				    &#60;tbody&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;John&#60;/td&#62;
+					        &#60;td&#62;Doe&#60;/td&#62;
+					        &#60;td&#62;john@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;Mary&#60;/td&#62;
+					        &#60;td&#62;Moe&#60;/td&#62;
+					        &#60;td&#62;mary@example.com&#60;/td&#62;
+					   &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;July&#60;/td&#62;
+					        &#60;td&#62;Dooley&#60;/td&#62;
+					        &#60;td&#62;july@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+				    &#60;/tbody&#62;
+				&#60;/table&#62;
+				&#60;table class="table"&#62;
+				    &#60;thead class="thead-light"&#62;
+					    &#60;tr&#62;
+					        &#60;th&#62;Firstname&#60;/th&#62;
+					        &#60;th&#62;Lastname&#60;/th&#62;
+					        &#60;th&#62;Email&#60;/th&#62;
+					    &#60;/tr&#62;
+				    &#60;/thead&#62;
+				    &#60;tbody&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;John&#60;/td&#62;
+					        &#60;td&#62;Doe&#60;/td&#62;
+					        &#60;td&#62;john@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;Mary&#60;/td&#62;
+					        &#60;td&#62;Moe&#60;/td&#62;
+					        &#60;td&#62;mary@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;July&#60;/td&#62;
+					        &#60;td&#62;Dooley&#60;/td&#62;
+					        &#60;td&#62;july@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+				    &#60;/tbody&#62;
+				&#60;/table&#62;
+			&#60;/div&#62;
+        </pre>
+
+        <h3>Маленький стол</h3>
+        <p>
+        	<span>.table-sm</span> Класс делает стол меньше за счет сокращения клеток отступы пополам:
+        </p>        
+		<div class="container">
+			<table class="table table-bordered table-sm">
+			    <thead>
+				    <tr>
+				        <th>Firstname</th>
+				        <th>Lastname</th>
+				        <th>Email</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+				    <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td>john@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				    </tr>
+				    <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				    </tr>
+			    </tbody>
+			</table>
+		</div>
+		<pre>
+			&#60;div class="container"&#62;
+				&#60;table class="table table-bordered table-sm"&#62;
+				    &#60;thead&#62;
+					    &#60;tr&#62;
+					        &#60;th&#62;Firstname&#60;/th&#62;
+					        &#60;th&#62;Lastname&#60;/th&#62;
+					        &#60;th&#62;Email&#60;/th&#62;
+					    &#60;/tr&#62;
+				    &#60;/thead&#62;
+				    &#60;tbody&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;John&#60;/td&#62;
+					        &#60;td&#62;Doe&#60;/td&#62;
+					        &#60;td&#62;john@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;Mary&#60;/td&#62;
+					        &#60;td&#62;Moe&#60;/td&#62;
+					        &#60;td&#62;mary@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+					    &#60;tr&#62;
+					        &#60;td&#62;July&#60;/td&#62;
+					        &#60;td&#62;Dooley&#60;/td&#62;
+					        &#60;td&#62;july@example.com&#60;/td&#62;
+					    &#60;/tr&#62;
+				    &#60;/tbody&#62;
+				&#60;/table&#62;
+		    &#60;/div&#62;
+		</pre>
+
+		<h3>Отзывчивые таблицы</h3>
+		<p>
+			<span>.table-responsive</span> Класс создает ответную таблицу: горизонтальную полосу прокрутки добавляется к таблице на экранах, которые меньше , чем 992px широкий ( в случае необходимости). При просмотре с разрешением более 992 пикселей нет никакой разницы:
+		</p>
+		<div class="container">
+			<div class="table-responsive">
+			    <table class="table table-bordered">
+				    <thead>
+				        <tr>
+					        <th>#</th>
+					        <th>Firstname</th>
+					        <th>Lastname</th>
+					        <th>Age</th>
+					        <th>City</th>
+					        <th>Country</th>
+					        <th>Sex</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+					        <th>Example</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr>
+					        <td>1</td>
+					        <td>Anna</td>
+					        <td>Pitt</td>
+					        <td>35</td>
+					        <td>New York</td>
+					        <td>USA</td>
+					        <td>Female</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+					        <td>Yes</td>
+				        </tr>
+				    </tbody>
+			    </table>
+		    </div>
+        </div>
+        <pre>
+        	&#60;div class="container"&#62;
+				&#60;div class="table-responsive"&#62;
+				    &#60;table class="table table-bordered"&#62;
+					    &#60;thead&#62;
+					        &#60;tr&#62;
+						        &#60;th&#62;#&#60;/th&#62;
+						        &#60;th&#62;Firstname&#60;/th&#62;
+						        &#60;th&#62;Lastname&#60;/th&#62;
+						        &#60;th&#62;Age&#60;/th&#62;
+						        &#60;th&#62;City&#60;/th&#62;
+						        &#60;th&#62;Country&#60;/th&#62;
+						        &#60;th&#62;Sex&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+					        &#60;/tr&#62;
+					    &#60;/thead&#62;
+					    &#60;tbody&#62;
+					        &#60;tr&#62;
+						        &#60;td&#62;1&#60;/td&#62;
+						        &#60;td&#62;Anna&#60;/td&#62;
+						        &#60;td&#62;Pitt&#60;/td&#62;
+						        &#60;td&#62;35&#60;/td&#62;
+						        &#60;td&#62;New York&#60;/td&#62;
+						        &#60;td&#62;USA&#60;/td&#62;
+						        &#60;td&#62;Female&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+					        &#60;/tr&#62;
+					    &#60;/tbody&#62;
+				    &#60;/table&#62;
+		        &#60;/div&#62;
+            &#60;/div&#62;
+        </pre>
+        <p>
+		Вы также можете решить, когда таблица должна получить полосу прокрутки, в зависимости от ширины экрана:
+	    </p>
+        <div class="container">           
+			<table class="table table-striped table-bordered">
+			    <thead>
+				    <tr>
+				        <th>Учебный класс</th>
+				        <th>Описание</th>				        
+				    </tr>
+			    </thead>
+			    <tbody class="study">
+				    <tr>
+				        <td>.table-responsive-sm</td>
+				        <td>&#60;576 пикселей</td>
+				    </tr>
+			        <tr>
+				        <td>.table-responsive-md</td>
+				        <td>&#60;768 пикселей</td>
+			        </tr>
+			        <tr>
+				        <td>.table-responsive-lg</td>
+				        <td>&#60;992 пикселей</td>
+			        </tr>
+			        <tr>
+				        <td>.table-responsive-xl</td>
+				        <td>&#60;1200 пикселей</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+		<div class="container">
+			<div class="table-responsive-sm">
+				    <table class="table table-bordered">
+					    <thead>
+					        <tr>
+						        <th>#</th>
+						        <th>Firstname</th>
+						        <th>Lastname</th>
+						        <th>Age</th>
+						        <th>City</th>
+						        <th>Country</th>
+						        <th>Sex</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+						        <th>Example</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+						        <td>1</td>
+						        <td>Anna</td>
+						        <td>Pitt</td>
+						        <td>35</td>
+						        <td>New York</td>
+						        <td>USA</td>
+						        <td>Female</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+						        <td>Yes</td>
+					        </tr>
+					    </tbody>
+				    </table>
+		    </div>
+        </div>
+        <pre>
+        	&#60;div class="container"&#62;
+				&#60;div class="table-responsive-sm"&#62;
+				    &#60;table class="table table-bordered"&#62;
+					    &#60;thead&#62;
+					        &#60;tr&#62;
+						        &#60;th&#62;#&#60;/th&#62;
+						        &#60;th&#62;Firstname&#60;/th&#62;
+						        &#60;th&#62;Lastname&#60;/th&#62;
+						        &#60;th&#62;Age&#60;/th&#62;
+						        &#60;th&#62;City&#60;/th&#62;
+						        &#60;th&#62;Country&#60;/th&#62;
+						        &#60;th&#62;Sex&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+						        &#60;th&#62;Example&#60;/th&#62;
+					        &#60;/tr&#62;
+					    &#60;/thead&#62;
+					    &#60;tbody&#62;
+					        &#60;tr&#62;
+						        &#60;td&#62;1&#60;/td&#62;
+						        &#60;td&#62;Anna&#60;/td&#62;
+						        &#60;td&#62;Pitt&#60;/td&#62;
+						        &#60;td&#62;35&#60;/td&#62;
+						        &#60;td&#62;New York&#60;/td&#62;
+						        &#60;td&#62;USA&#60;/td&#62;
+						        &#60;td&#62;Female&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+						        &#60;td&#62;Yes&#60;/td&#62;
+					        &#60;/tr&#62;
+					    &#60;/tbody&#62;
+				    &#60;/table&#62;
+		        &#60;/div&#62;
+            &#60;/div&#62;
+        </pre>
+        <div class="heading footer">
+			<a href="https://getbootstrap.com/docs/4.0/content/tables/">Дополнительная информация</a>
+			<a href="index.html">На главную</a>	
+	    </div>	    	    	
+	</div>
+</body>
+</html>
