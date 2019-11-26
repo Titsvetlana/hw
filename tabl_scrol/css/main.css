@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: block;
+	overflow: scroll;
+}
+table{
+	border-collapse: collapse;
+	text-align: center;   
+	font-family: Arial, sans-serif;
+}
+th, td{
+	padding: 15px;
+}
+tbody>tr>th{
+	width: 90px;
+	position: sticky;
+	left: 0;
+}
+th{
+    position: sticky;
+	top: 0;
+	background-color: rgba(73, 154, 235, .7);
+}
+tr:nth-child(even){
+	background-color: rgba(116, 119, 122, .1);
+}
