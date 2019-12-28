@@ -1,0 +1,11 @@
+body{
+    background-color: rgba(113, 161, 235, .5);
+}
+.container{
+	width: 60%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+li{
+	margin-bottom: 1%;
+}
