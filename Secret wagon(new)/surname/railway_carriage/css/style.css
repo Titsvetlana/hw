@@ -1,0 +1,14 @@
+body{
+	background-color: rgba(140, 136, 136, .3);
+	width: 100vh;
+}
+div{
+	width: 60%;
+	margin-left: 40%;
+}
+h3{
+	font-size: 25px;
+}
+p{
+	font-size: 19px;
+}
