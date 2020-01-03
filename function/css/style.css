@@ -1,0 +1,24 @@
+body{
+	background-color: #F0F8FF;
+	font-family: Arial, sans-serif;
+	font-size: 19px;
+	
+}
+div{
+	width: 60%;
+	margin-left: 20%;
+}
+li span{
+	font-weight: normal;
+}
+li{
+	color: rgba(97, 15, 63, 1);
+	padding-bottom: 15px;
+}
+li:nth-child(2n){
+	color: rgba(8, 28, 59, 1);
+}
+ol{
+	font-weight: bold;
+	padding-top: 25px;
+}
