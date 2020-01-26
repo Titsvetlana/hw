@@ -1,0 +1,31 @@
+body{
+	background-color: #FFDEAD;
+	font-family: Arial, sans-serif;	
+    line-height: 25px;
+}
+.container{
+	width: 70%;
+	margin-left: 15%;	
+}
+.h2{
+	padding-top: 3%;
+}
+pre{
+	background-color: rgba(247, 117, 10, .5);
+	padding-top: 2%;
+    width: 100vh;
+}
+.teg{
+	border-bottom: 1.5px solid red;
+}
+img{
+	margin-bottom: -1%;
+	width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+	pre{
+		width: 80%;
+		margin-right: 5%;
+	}	
+}
