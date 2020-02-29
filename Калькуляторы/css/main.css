@@ -1,0 +1,83 @@
+body{
+	background-color: rgba(56, 235, 184, .6);
+	user-select: none; /*нельзя выбрать доп символ*/
+}
+h3{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 5%;
+}
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;/* указываю, что у меня 4 столбца*/
+	grid-gap: 4px; /*задаю расстояние между ячейками*/
+	background-color: #BBB;
+	padding: 4px;
+	border-radius: 5px;
+	max-width: 360px;
+	font-family: 'Tahoma';
+	margin-left: 20%;
+	margin-top: 5%;
+}
+.item{
+	background-color: #9C9C9C;
+	color: #000;
+	padding: 20px;
+	display: flex; 
+	/*выравниваем все содержимое по центру*/
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	cursor: pointer;
+	font-weight: bold;
+}
+form{
+	max-width: 100%;
+}
+input{
+	width: 100%;
+	height: 60px;
+	border: none;
+	font-size: 30px;
+	outline: none; /*чтоб не появлялась граница при фокусе на елементе*/
+	text-align: right;
+}
+/*стилизуем кнопки*/
+.input{
+	grid-column: 1/-1; /*указываем, чтоб первая ячейка заняла всю ширину. не растянулась-повлиял секундамер*/
+	padding: 0; /*ячейка для отображения растянется на все пространство*/
+}
+.clean{
+	grid-column: 1/3; /*занимает 2 ячейки из 4*/
+	background-color: #708090;
+}
+.back{
+	grid-column: 3/-1; /*чтоб кнопка заняла все оставшееся пространство*/
+}
+.equal{
+	grid-column: 4; /*указываем расположение кнопки*/
+	grid-row: 6/8; /*растягиваем кнопку вниз*/
+	background-color: #708090;
+}
+.zero{
+	grid-column: 1/3; /*растягиваю кнопку на 2 ячейки*/
+}
+
+
+/*Секундамер*/
+form{
+	margin-top: 5%;
+ 	margin-left: 25%;
+ 	width: 350px;
+}
+input[type=button] {
+  background-color: #876C99;
+  text-align: center;
+  border-top: 0.5px solid #000;
+  border-radius: 5px;
+}
+input[name=stopwatch]{
+	 background-color: rgba(135, 108, 153, .9);
+	 text-align: center;
+	 border-radius: 5px;
+}
