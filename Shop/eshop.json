@@ -1,0 +1,247 @@
+{
+	"1001": {
+			    "name": "Женские босоножки",
+				"brand": "Vitto Rossi",
+				"cost": 2198,
+				"description": "Материал - кожа",
+				"img": "img/sandals1.jpg"	
+			},	
+	"1002": {
+			    "name": "Женские босоножки",
+				"brand": "Vitto Rossi",
+				"cost": 2398,
+				"description": "Материал - кожа",
+				"img": "img/sandals2.jpg"	
+			},
+	"1003": {
+			    "name": "Женские босоножки",
+				"brand": "Vitto Rossi",
+				"cost": 2104,
+				"description": "Верх замша, Материал подкладки - кожа",
+				"img": "img/sandals3.jpg"	
+			},
+	"1004": {
+			    "name": "Женские босоножки",
+				"brand": "Vitto Rossi",
+				"cost": 2398,
+				"description": "Материал - кожа",
+				"img": "img/sandals4.jpg"	
+			},
+	"1005": {
+			    "name": "Женские босоножки",
+				"brand": "Vitto Rossi",
+				"cost": 2270,
+				"description": "Материал - кожа",
+				"img": "img/sandals5.jpg"	
+			},
+	"1011": {
+			    "name": "Женские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1981,
+				"description": "Материал - кожа",
+				"img": "img/boots1.jpg"	
+			},
+	"1012": {
+			    "name": "Женские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1922,
+				"description": "Материал - кожа",
+				"img": "img/boots2.jpg"	
+			},
+	"1013": {
+			    "name": "Женские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1670,
+				"description": "Материал - кожа",
+				"img": "img/boots3.jpg"	
+			},
+	"1014": {
+			    "name": "Женские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 2120,
+				"description": "Материал - кожа",
+				"img": "img/boots4.jpg"	
+			},
+	"1015": {
+			    "name": "Женские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 999,
+				"description": "Материал - замша",
+				"img": "img/boots5.jpg"	
+			},
+	"1021": {
+			    "name": "Женские сапоги",
+				"brand": "Vitto Rossi",
+				"cost": 2531,
+				"description": "Материал - кожа",
+				"img": "img/boot1.jpg"	
+			},
+	"1022": {
+			    "name": "Женские сапоги",
+				"brand": "Vitto Rossi",
+				"cost": 999,
+				"description": "Материал - замша",
+				"img": "img/boot2.jpg"	
+			},
+	"1023": {
+			    "name": "Женские сапоги",
+				"brand": "Vitto Rossi",
+				"cost": 2155,
+				"description": "Материал - замша",
+				"img": "img/boot3.jpg"	
+			},
+	"1024": {
+			    "name": "Женские сапоги",
+				"brand": "Vitto Rossi",
+				"cost": 1499,
+				"description": "Материал - кожа",
+				"img": "img/boot4.jpg"	
+			},
+	"1025": {
+			    "name": "Женские сапоги",
+				"brand": "Vitto Rossi",
+				"cost": 999,
+				"description": "Материал - кожа",
+				"img": "img/boot5.jpg"	
+			},
+	"1031": {
+			    "name": "Женские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 2078,
+				"description": "Материал - замша",
+				"img": "img/shoes1.jpg"	
+			},
+	"1032": {
+			    "name": "Женские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 2078,
+				"description": "Материал - замша",
+				"img": "img/shoes2.jpg"	
+			},
+	"1033": {
+			    "name": "Женские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 1499,
+				"description": "Материал - кожа",
+				"img": "img/shoes3.jpg"	
+			},
+	"1034": {
+			    "name": "Женские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 2286,
+				"description": "Материал - кожа",
+				"img": "img/shoes4.jpg"	
+			},
+	"1035": {
+			    "name": "Женские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 2598,
+				"description": "Материал - кожа",
+				"img": "img/shoes5.jpg"	
+			},
+	"1041": {
+			    "name": "Мужские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1299,
+				"description": "Материал - замша",
+				"img": "img/bootsMen1.jpg"	
+			},	
+	"1042": {
+			    "name": "Мужские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1402,
+				"description": "Материал - кожа",
+				"img": "img/bootsMen2.jpg"	
+			},	
+	"1043": {
+			    "name": "Мужские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1402,
+				"description": "Материал - кожа",
+				"img": "img/bootsMen3.jpg"	
+			},	
+	"1044": {
+			    "name": "Мужские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1607,
+				"description": "Материал - кожа",
+				"img": "img/bootsMen4.jpg"	
+			},	
+	"1045": {
+			    "name": "Мужские ботинки",
+				"brand": "Vitto Rossi",
+				"cost": 1505,
+				"description": "Материал - замша",
+				"img": "img/bootsMen5.jpg"	
+			},
+	"1051": {
+			    "name": "Мужские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 2286,
+				"description": "Материал - нубук",
+				"img": "img/shoesMen1.jpg"	
+			},
+	"1052": {
+			    "name": "Мужские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 2270,
+				"description": "Материал - кожа",
+				"img": "img/shoesMen2.jpg"	
+			},
+	"1053": {
+			    "name": "Мужские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 2398,
+				"description": "Материал - кожа",
+				"img": "img/shoesMen3.jpg"	
+			},
+	"1054": {
+			    "name": "Мужские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 1299,
+				"description": "Материал - замша",
+				"img": "img/shoesMen4.jpg"	
+			},
+	"1055": {
+			    "name": "Мужские туфли",
+				"brand": "Vitto Rossi",
+				"cost": 1299,
+				"description": "Материал - кожа",
+				"img": "img/shoesMen5.jpg"	
+			},
+	"1061": {
+			    "name": "Мужские кроссовки",
+				"brand": "Vitto Rossi",
+				"cost": 2158,
+				"description": "Материал - нубук",
+				"img": "img/sneakers1.jpg"	
+			},
+	"1062": {
+			    "name": "Мужские кроссовки",
+				"brand": "Vitto Rossi",
+				"cost": 2078,
+				"description": "Материал - кожа/замша",
+				"img": "img/sneakers2.jpg"	
+			},
+	"1063": {
+			    "name": "Мужские кроссовки",
+				"brand": "Vitto Rossi",
+				"cost": 1679,
+				"description": "Материал - кожа/текстиль",
+				"img": "img/sneakers3.jpg"	
+			},
+	"1064": {
+			    "name": "Мужские кроссовки",
+				"brand": "Vitto Rossi",
+				"cost": 1230,
+				"description": "Материал - текстиль",
+				"img": "img/sneakers4.jpg"	
+			},
+    "1065": {
+			    "name": "Мужские кроссовки",
+				"brand": "Vitto Rossi",
+				"cost": 1558,
+				"description": "Материал - текстиль",
+				"img": "img/sneakers5.jpg"	
+			}			
+}
